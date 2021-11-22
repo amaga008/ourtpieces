@@ -10,10 +10,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_22_170157) do
+ActiveRecord::Schema.define(version: 2021_11_22_175456) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "arts", force: :cascade do |t|
+    t.integer "starting_price"
+    t.integer "current_price"
+    t.string "creator"
+    t.text "description"
+    t.string "title"
+    t.string "category"
+    t.string "personal_url"
+    t.string "measurements"
+    t.boolean "is_for_sale"
+    t.boolean "is_for_auction"
+    t.datetime "auction_end_time"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_arts_on_user_id"
+  end
+
+  create_table "bids", force: :cascade do |t|
+    t.integer "amount"
+    t.datetime "bid_timestamp"
+    t.bigint "user_id", null: false
+    t.bigint "art_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["art_id"], name: "index_bids_on_art_id"
+    t.index ["user_id"], name: "index_bids_on_user_id"
+  end
+
+  create_table "transactions", force: :cascade do |t|
+    t.datetime "transaction_timestamp"
+    t.bigint "art_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["art_id"], name: "index_transactions_on_art_id"
+    t.index ["user_id"], name: "index_transactions_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,4 +66,9 @@ ActiveRecord::Schema.define(version: 2021_11_22_170157) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "arts", "users"
+  add_foreign_key "bids", "arts"
+  add_foreign_key "bids", "users"
+  add_foreign_key "transactions", "arts"
+  add_foreign_key "transactions", "users"
 end
