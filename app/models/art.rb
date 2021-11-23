@@ -7,6 +7,5 @@ class Art < ApplicationRecord
   validates :description, presence: true
   validates :starting_price, presence: true
   validates :category, presence: true
-
-  # We need to see how validation will work out with the auctions part
+  validates :measurements, presence: true
 end
