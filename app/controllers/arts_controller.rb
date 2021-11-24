@@ -7,7 +7,7 @@ class ArtsController < ApplicationController
     @art = Art.new(art_params)
     @art.user = current_user
     if @art.save
-      redirect_to art_path
+      redirect_to arts_path
     else
       render :new
     end
@@ -35,7 +35,6 @@ class ArtsController < ApplicationController
   private
 
   def art_params
-    params.require(:arts).permit(:title, :description, :starting_price, :creator, :measurements, :is_for_auction,
-                                 :is_for_sale, :category, :auction_end_time, :created_at, :updated_at, :user_id)
+    params.require(:art).permit(:title, :description, :starting_price, :measurements, :category)
   end
 end
