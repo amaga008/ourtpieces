@@ -1,0 +1,18 @@
+<div class="show-body">
+  <div class= "show-container">
+    <%= image_tag "PaintingNoor.jpg" %>
+    </div>
+    <div class= "show-text-container">
+      <h2 class="art-title"> <%= @art.title %></h2>
+      <h3 class="showpage-texts"> <strong> Creator:</strong> <%= @art.creator %></h3>
+      <p class="showpage-texts"><strong>Category:</strong> <%= @art.category %></p>
+      <p class="showpage-texts"><strong>Measurements:</strong> <%= @art.measurements %></p>
+      <h2 class="showpage-texts"><strong> Price: </strong>€ <%= @art.starting_price %></h2>
+      <br>
+    </div>
+
+<% if @art.is_for_auction == true %>
+  <%= render partial: 'shared/auction_card' %>
+<% end %>
+
+</div>
