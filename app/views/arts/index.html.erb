@@ -1,0 +1,32 @@
+<div class="index-page">
+
+  <div class="banner">
+      <div class="container">
+        <video autoplay loop muted class="banner__video" poster="https://c.tenor.com/BhwW-9FnHtMAAAAd/vincent-van-gogh-starry-starry-night.gif">
+          <source src="https://c.tenor.com/BhwW-9FnHtMAAAAd/vincent-van-gogh-starry-starry-night.gif" type="video/webm">
+        </video>
+          <div class="page-title"><h1>Look Through All OurtPieces</h1>
+          </div>
+          <div class="page-subtitle"> <h4>Take part in our Auctions or Buy Now!</h4>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="d-flex">
+      <div class="row justify-content-between">
+        <% @arts.each do |art| %>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><%= art.title %></h5>
+                    <p class="card-text"> <%= art.creator %> </p>
+                    <%= link_to '', art, class:"btn btn-dark"%>
+                  </div>
+              </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+</div>
