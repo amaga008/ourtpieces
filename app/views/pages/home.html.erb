@@ -7,12 +7,18 @@
       <div>
         <h1>Be part of the NFT revolution, buy your OURTPIECE today!</h1>
         <div class="inline-block">
-          <%= link_to "Explore", arts_path, class: "btn btn-dark mr-3" %>
-          <%= link_to "Create", new_art_path, class: "btn btn-primary mr-3" %>
+          <%= link_to "Explore", arts_path, class: "home-explore mr-3" %>
+          <%= link_to "Create", new_art_path, class: "home-create mr-3" %>
         </div>
       </div>
       <div>
-        <h2 class="p-5" style="background-color: white">card</h2>
+        <div class="card mr-5" style="width: 18rem;">
+          <%= image_tag "", class: "card-img-top" %>
+          <div class="card-body">
+            <h5 class="card-title">username</h5>
+            <p class="card-text">title</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
