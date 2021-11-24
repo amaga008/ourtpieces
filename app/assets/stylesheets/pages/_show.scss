@@ -1,0 +1,21 @@
+.show-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.show-text-container {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.show-container {
+  max-width: 50%;
+  img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
