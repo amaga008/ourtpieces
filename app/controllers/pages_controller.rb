@@ -6,4 +6,7 @@ class PagesController < ApplicationController
 
   def settings
   end
+
+  def test
+  end
 end
