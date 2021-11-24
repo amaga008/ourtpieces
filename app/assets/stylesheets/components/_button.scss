@@ -35,19 +35,49 @@
 
 
 .home-create {
-  background-color: transparent;
+  background-color: white;
   line-height: 1;
   margin: 5px;
   padding: 14px;
   color: palevioletred;
-  border-color: lightpink;
+  border: lightpink;
+  border-radius: 10px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: bolder;
 }
 
 .home-create:hover {
   background-color: palevioletred;
-  border-color: darksalmon;
-  color: pink;
-  padding: 9px;
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: white;
+  border: lightpink;
+  border-radius: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
+}
+
+.home-explore {
+  background-color: palevioletred;
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: white;
+  border: lightpink;
+  border-radius: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
+}
+
+.home-explore:hover {
+  background-color: white;
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: palevioletred;
+  border: lightpink;
+  border-radius: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
 }
