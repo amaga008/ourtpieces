@@ -1,6 +1,6 @@
 .show-body {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-direction: row;
 }
 
@@ -13,6 +13,8 @@
 }
 
 .show-container {
+  margin-left: 7%;
+  margin-top: 5%;
   max-width: 50%;
   img {
     max-width: 80%;
