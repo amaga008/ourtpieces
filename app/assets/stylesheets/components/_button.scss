@@ -1,0 +1,53 @@
+.confirm-purchase {
+  background-color: transparent;
+  line-height: 1;
+  margin: 2px;
+  padding: 8px;
+  color: grey;
+  border-color: grey;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
+}
+
+.place-bid {
+  background-color: grey;
+  line-height: 1;
+  margin: 2px;
+  padding: 8px;
+  color: rgb(255, 255, 255);
+  border-color: darkgrey;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: normal;
+}
+
+.confirm-purchase:hover {
+  color: white;
+  font-weight: bolder;
+  padding: 9px;
+}
+
+.place-bid:hover {
+  background-color: grey;
+  border-color: darkgrey;
+  color: white;
+  padding: 9px;
+}
+
+
+.home-create {
+  background-color: transparent;
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: palevioletred;
+  border-color: lightpink;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
+}
+
+.home-create:hover {
+  background-color: palevioletred;
+  border-color: darksalmon;
+  color: pink;
+  padding: 9px;
+}
