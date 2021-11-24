@@ -4,7 +4,6 @@ Rails.application.routes.draw do
 
   get "profile", to: "users#profile", as: "profile"
   get "settings", to: "pages#settings"
-  get "test", to: "pages#test"
 
   resources :users, only: [:show]
 
