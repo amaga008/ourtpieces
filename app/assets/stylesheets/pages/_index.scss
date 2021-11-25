@@ -3,3 +3,63 @@
 @import "show";
 @import "profile";
 @import "new";
+
+
+#below-banner-index {
+  justify-content: space-evenly
+}
+
+.banner-index form {
+ display: flex;
+ justify-content: center;
+}
+
+#search_query {
+  background-color: transparent;
+  border: 0.5px solid white;
+  color: pink;
+}
+
+.btn-search {
+  color: rgb(255, 255, 255);
+}
+
+.btn-search:hover {
+  color: rgb(238, 157, 184);
+}
+
+.btn-drop {
+  background-color: palevioletred;
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: white;
+  border: lightpink;
+  border-radius: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter-style-button {
+  background-color: rgb(99, 35, 227);
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: white;
+  border: lightpink;
+  border-radius: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
+  width: 100px;
+}
+
+#filter-text {
+  color: rgb(84, 28, 196);
+  font-weight: bolder;
+}
