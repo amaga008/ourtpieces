@@ -81,3 +81,27 @@
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: bolder;
 }
+
+.profile-create {
+  background-color: palevioletred;
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: white;
+  border: lightpink;
+  border-radius: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
+}
+
+.profile-create:hover {
+  background-color: black;
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: palevioletred;
+  border: palevioletred;
+  border-radius: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
+}
