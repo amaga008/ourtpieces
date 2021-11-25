@@ -82,12 +82,14 @@
   font-weight: bolder;
 }
 
-.btn-drop {
+
+.profile-create {
   background-color: palevioletred;
   line-height: 1;
   margin: 5px;
   padding: 14px;
   color: rgb(255, 255, 255);
+  color: white;
   border: lightpink;
   border-radius: 10px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
@@ -96,4 +98,15 @@
 
 .btn-drop:hover {
   box-shadow: 0 0 6px palevioletred;
+}
+.profile-create:hover {
+  background-color: black;
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: palevioletred;
+  border: palevioletred;
+  border-radius: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
 }

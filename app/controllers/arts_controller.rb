@@ -18,14 +18,14 @@ class ArtsController < ApplicationController
   end
 
   def edit
+    @art = Art.find(params[:id])
   end
 
   def update
-    if @art.update(art_params)
-      redirect_to @art, notice: 'Art listing was successfully updated.'
-    else
-      render :edit
-    end
+    @art = Art.find(params[:id])
+    @art.update(art_params)
+
+    redirect_to art_path(@art)
   end
 
   def show

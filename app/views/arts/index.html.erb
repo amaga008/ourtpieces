@@ -22,8 +22,25 @@
       </div>
   </div>
 
+
+
+
+
+
   <div class="container mt-5">
-    <div class="d-flex" id="below-banner-index">
+  <p class="ml-4"> Filter By</p>
+    <div class= filters-container d-flex>
+    <div class="d-flex col-6">
+         <div class="filter-style-button">
+        Status
+         </div>
+          <div class="filter-style-button">
+        Category
+         </div>
+        <div class="filter-style-button">
+        Price
+         </div>
+      </div>
       <div class= "dropdown">
           <button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown">Sort By
           <span class="caret"></span></button>
@@ -34,9 +51,13 @@
             <li><a href="#">Oldest First</a></li>
           </ul>
       </div>
-
+    </div>
     </div>
   </div>
+
+
+
+
 
   <div class="container mt-5">
 
@@ -44,7 +65,8 @@
             <% @arts.each do |art| %>
           <%= link_to art do %>
           <div class="card-art">
-          <%= cl_image_tag art.photo.key %>
+
+            <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg" />
             <div class="card-art-infos">
               <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-art-user avatar-bordered" />
               <div>
