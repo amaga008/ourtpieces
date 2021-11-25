@@ -1,6 +1,6 @@
 <div class="index-page">
 
-  <div class="banner">
+  <div class="banner-index">
       <div class="container">
         <video autoplay loop muted class="banner__video" poster="https://c.tenor.com/BhwW-9FnHtMAAAAd/vincent-van-gogh-starry-starry-night.gif">
           <source src="https://c.tenor.com/BhwW-9FnHtMAAAAd/vincent-van-gogh-starry-starry-night.gif" type="video/webm">
@@ -9,33 +9,62 @@
           </div>
           <div class="page-subtitle"> <h4>Take part in our Auctions or Buy Now!</h4>
           </div>
-      </div>
-  </div>
-
-  <div class="container mt-5">
-    <div class="d-flex justify-content-between">
       <div>
-        <h1>Dropdown menus here</h1>
-      </div>
-      <div>
-        <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+        <%= simple_form_for :search, url: arts_path, method: :get do |f| %>
           <div class="search-form-control form-group">
             <input class="form-control string required" type="text" name="search[query]" id="search_query" />
-            <button name="button" type="submit" class="btn btn-flat">
+            <button name="button" type="submit" class="btn btn-flat btn-search">
               <i class="fas fa-search"></i> Search
             </button>
           </div>
         <% end %>
       </div>
+      </div>
+  </div>
+
+
+
+
+
+
+  <div class="container mt-5">
+  <p class="ml-4"> Filter By</p>
+    <div class= filters-container d-flex>
+    <div class="d-flex col-6">
+         <div class="filter-style-button">
+        Status
+         </div>
+          <div class="filter-style-button">
+        Category
+         </div>
+        <div class="filter-style-button">
+        Price
+         </div>
+      </div>
+      <div class= "dropdown">
+          <button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown">Sort By
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Price: High-Low</a></li>
+            <li><a href="#">Price: Low-High</a></li>
+            <li><a href="#">Newest First</a></li>
+            <li><a href="#">Oldest First</a></li>
+          </ul>
+      </div>
+    </div>
     </div>
   </div>
 
+
+
+
+
   <div class="container mt-5">
-    <div class="d-flex">
-      <div class="row justify-content-between">
-        <% @arts.each do |art| %>
+
+          <div class="row justify-content-between">
+            <% @arts.each do |art| %>
           <%= link_to art do %>
-          <div class="card-art">
+          <div class="card-art"
             <% if art.photo.attached? %>
               <%= cl_image_tag art.photo.key, height: 300, width: 400, crop: :fill %>
             <% else  %>
@@ -45,11 +74,11 @@
               <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-art-user avatar-bordered" />
               <div>
                 <h2 class="card-title"><%= art.title %></h2>
-                <p class="card-text"> <%= art.user.username %> </p>
-              </div>
+                <p class="card-text"> <%= art.user.username %></p>
             </div>
           </div>
-          <% end %>
+         </div>
+         <% end %>
         <% end %>
       </div>
     </div>
