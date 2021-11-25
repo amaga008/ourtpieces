@@ -93,10 +93,55 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
+.card-show-description {
+  overflow: hidden;
+  width: 560px;
+  border-radius: 15px 15px;
+  background: white;
+  border: 1px solid rgb(189, 186, 186);
+  margin-bottom: 1%;
+  transition: ease 0.3s;
+  margin-left: 5%;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+.card-show-description h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 4px;
+  color: rgb(88, 87, 87);
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+
+}
+
+.card-show-description p {
+  font-size: 10px;
+  margin: 0;
+  color: rgb(88, 87, 87);
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
 .auction-card {
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.308);
+}
+
+.auction-card-container {
+  margin-bottom: 20px;
+  margin-left: 150px;
+  width: 500px;
+  padding: 40px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .auction-card h4 {
-  color: white;
+  color: rgb(49, 8, 8);
+}
+
+.sale-card {
+  background-color: rgba(255, 255, 255, 0.308);
+}
+
+.sale-card h4 {
+  color: rgb(49, 8, 8);
 }
