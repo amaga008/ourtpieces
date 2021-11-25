@@ -81,3 +81,19 @@
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: bolder;
 }
+
+.btn-drop {
+  background-color: palevioletred;
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: rgb(255, 255, 255);
+  border: lightpink;
+  border-radius: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
+}
+
+.btn-drop:hover {
+  box-shadow: 0 0 6px palevioletred;
+}
