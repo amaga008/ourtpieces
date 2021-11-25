@@ -4,62 +4,62 @@
   align-items: center;
 }
 
-.card {
-  height: 450px;
-  width: 480px;
+.card-art {
+  overflow: hidden;
+  width: 350px;
+  border-radius: 15px 15px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: 50px;
-  margin-right: 20px;
-  border-radius: 30px 30px 30px 30px;
-  height: fit-content;
-  box-shadow: 0 4px 8px 0 grey;
-  transition: 0.3s;
-  border: none;
   transition: ease 0.3s;
 }
 
-.card-index {
-height: 200px;
-  width: 289px;
-  border-radius: 15px 15px 0px 0px;
-  object-fit: cover;
+.card-art:hover {
+  overflow: hidden;
+  border-radius: 15px 15px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  margin-bottom: 50px;
 }
 
-.card img {
-  height: 400px;
-  width: 489px;
-  border-radius: 15px 15px 0px 0px;
-  object-fit: cover;
-}
-
-.banner .card img {
-  height: 300px;
+.card-art > img {
+  height: 200px;
   width: 100%;
-  border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
 
-.card {
-  h1 {
-    color: dimgray;
-    text-decoration: wavy;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: bold;
-  }
-  h2 {
-    color: dimgray;
-    text-decoration: wavy;
-    font-size: 26px;
-    font-style: italic;
-    font-weight: normal;
-  }
-  h3 {
-    color: dimgray;
-    text-decoration: wavy;
-    font-size: 22px;
-    font-style: italic;
-    font-weight: normal;
-  }
+.card-art h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: black;
+}
+
+.card-art p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+  color: black;
+}
+
+.card-art-infos a.none {
+    text-decoration: none;
+}
+
+
+.card-art .card-art-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-art-infos .card-art-user {
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  width: 40px;
 }
 
 .card-category {
@@ -91,4 +91,12 @@ height: 200px;
   text-shadow: 1px 1px 3px rgba(133, 94, 94, 0.4);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.auction-card {
+  background-color: red;
+}
+
+.auction-card h4 {
+  color: white;
 }
