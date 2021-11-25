@@ -52,8 +52,8 @@
     <% else %>
     <div class="sale-card-container">
       <div class="sale-card">
-        <h4 class="sale-title">On Auction</h4>
-        <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#exampleModal">Place a bid</button>
+        <h4 class="sale-title">On Sale</h4>
+        <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#exampleModal">Purchase Ourtwork</button>
       </div>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -66,7 +66,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <%= render partial: "bids/form", locals: {bid: Bid.new, art: @art} %>
+            <%= render partial: "transactions/form", locals: {transaction: Transaction.new, art: @art} %>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
