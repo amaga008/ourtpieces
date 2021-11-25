@@ -1,4 +1,4 @@
-<div style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);">
+<div style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80); height:100%">
   <h1 class="text-center new-page-title">Create your OurtPiece now</h1>
   <br>
   <div class="mb-5 container card-new-art justify-content w-50">
@@ -11,8 +11,7 @@
             <%= f.input :measurements, label_html: { class:"text-input-white"} %>
             <%= f.input :photo,label_html: { class:"text-input-white"}, as: :file %>
             <%= f.input :starting_price, label: "Listing Price",label_html: { class:"text-input-white"} %>
-            <%= f.input :is_for_sale, label: "Fixed Sale",label_html: { class:"text-input-white"} %>
-            <%= f.input :is_for_auction, label: "Auction Sale",label_html: { class:"text-input-white"} %>
+            <%= f.input :is_for_auction, label: "Auction or Sale",label_html: { class:"text-input-white"}, as: :radio_buttons, :collection => [ ['Auction', true], ['Sale', false] ] %>
             <%= f.input :auction_end_time, label_html: { class:"text-input-white"} %>
             <%= f.submit class: 'btn btn-dark mt-3' %>
           <% end %>
