@@ -1,6 +1,7 @@
 class Art < ApplicationRecord
   has_many :transactions
   has_many :bids
+  has_one_attached :photo
   belongs_to :user
 
   validates :title, presence: true
