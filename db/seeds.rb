@@ -45,7 +45,7 @@ counter = 0
 10.times do
   art_file = URI.open("#{art_photos[counter]}")
   art = Art.new(
-    title: Faker::Space.constellation,
+    title: Faker::Book.title,
     description: Faker::Lorem.paragraph,
     category: ["paintings", "sculptures", "pottery", "photography", "ceramics"].sample,
     user_id: User.all.sample.id,
