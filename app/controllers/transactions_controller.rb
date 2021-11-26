@@ -14,6 +14,7 @@ class TransactionsController < ApplicationController
     @transaction = Transaction.new(transaction_params)
     @transaction.art = @art
     @transaction.user = current_user
+    @art.update(user: current_user)
 
     if @transaction.save
       redirect_to art_transaction_path(@art, @transaction)

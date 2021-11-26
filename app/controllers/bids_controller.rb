@@ -1,6 +1,6 @@
 class BidsController < ApplicationController
   def index
-    @bids = Bids.all
+    @bids = Bid.all
   end
 
   def create
@@ -12,7 +12,7 @@ class BidsController < ApplicationController
     if @bid.amount <= @previous_bid.amount
       redirect_to art_path(@art), notice: 'Unfortunately your bid is too low'
     elsif @bid.save
-      redirect to art_path(@art), notice: 'Your bid has been successfully added'
+      redirect_to art_path(@art), notice: 'Your bid has been successfully added'
     else
       render 'arts/show', notice: 'Sorry, your bid is invalid'
     end
