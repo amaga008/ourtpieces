@@ -97,12 +97,8 @@
   overflow: hidden;
   width: 560px;
   border-radius: 15px 15px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: 3%;
-  margin-top: 3%;
-  transition: ease 0.3s;
-  margin-left: 5%;
+  margin-left: 16px;
   margin-top: 2%;
   padding: 2%;
 }
@@ -128,6 +124,7 @@
 }
 
 .auction-card-container {
+  border-radius: 20px;
   margin-bottom: 20px;
   margin-left: 150px;
   width: 500px;
@@ -140,6 +137,7 @@
 }
 
 .sale-card-container {
+  border-radius: 20px;
   margin-bottom: 20px;
   margin-left: 150px;
   width: 500px;

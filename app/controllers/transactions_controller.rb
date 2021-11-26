@@ -14,7 +14,7 @@ class TransactionsController < ApplicationController
     @transaction.user = current_user
 
     if @transaction.save
-      redirect_to art_transaction_path(@transaction)
+      redirect_to arts_path(@transaction)
     else
       render 'art/show'
     end
