@@ -89,3 +89,39 @@
   color: white;
   margin: 0px;
 }
+
+.banner-transaction{
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+}
+
+.banner-transaction h1 {
+  margin-bottom: 30px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 65px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.banner-transaction h2 {
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.banner-transaction h3 {
+  margin-bottom: 10px;
+  color: palevioletred;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+}
