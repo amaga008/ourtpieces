@@ -9,4 +9,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @art = @user.arts
   end
+
+
 end

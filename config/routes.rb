@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show]
 
   resources :arts do
-    resources :transactions, only: [ :create, :show ]
+    resources :transactions, only: [ :new, :create, :show ]
     resources :bids, only: [ :index, :create ]
   end
 end

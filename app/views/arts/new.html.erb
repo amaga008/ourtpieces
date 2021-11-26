@@ -9,7 +9,7 @@
             <%= f.input :description, label_html: { class:"text-input-white"} %>
             <%= f.input :category, label_html: { class:"text-input-white"}%>
             <%= f.input :measurements, label_html: { class:"text-input-white"} %>
-            <%= f.input :photo,label_html: { class:"text-input-white"}, as: :file %>
+            <%= f.input :photo, label_html: { class:"text-input-white"}, as: :file %>
             <%= f.input :starting_price, label: "Listing Price",label_html: { class:"text-input-white"} %>
             <%= f.input :is_for_auction, label: "Auction or Sale",label_html: { class:"text-input-white"}, as: :radio_buttons, :collection => [ ['Auction', true], ['Sale', false] ] %>
             <%= f.input :auction_end_time, label_html: { class:"text-input-white"} %>

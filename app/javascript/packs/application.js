@@ -29,9 +29,12 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 // import { isAuction } from '../forms/checkbox';
 
+import {modals} from "../modals/modals"
+
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  modals()
   // isAuction()
 });
 

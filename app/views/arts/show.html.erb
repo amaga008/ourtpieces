@@ -1,18 +1,82 @@
-<div class="show-body">
-  <div class= "show-container">
-    <%= image_tag "PaintingNoor.jpg" %>
+<div class="show-full-body">
+  <div class="show-body-container">
+    <div class="show-body">
+      <div class= "show-title-container">
+        <h3 class="art-title"> <strong> Title:</strong> <%= @art.title %></h3>
+        <p class="art-title"> <strong> Creator:</strong> <%= @art.creator %></p>
+      </div>
+      <div class= "show-container">
+        <%= image_tag "PaintingNoor.jpg" %>
+        </div>
+        <div class="card-show-description">
+          <h2> <strong>Description</strong></h2>
+          <p><strong>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</strong></p>
+        </div>
+        <div class= "show-text-container">
+          <p class="showpage-texts"><strong>Category:</strong> <%= @art.category %></p>
+          <p class="showpage-texts"><strong>Measurements:</strong> <%= @art.measurements %></p>
+          <br>
+        </div>
     </div>
-    <div class= "show-text-container">
-      <h3 class="art-title"> <strong> Title:</strong> <%= @art.title %></h3>
-      <p class="showpage-texts"> <strong> Creator:</strong> <%= @art.creator %></p>
-      <p class="showpage-texts"><strong>Category:</strong> <%= @art.category %></p>
-      <p class="showpage-texts"><strong>Measurements:</strong> <%= @art.measurements %></p>
-      <p class="showpage-texts"><strong> Price: </strong>€ <%= @art.starting_price %></p>
-      <br>
+  </div>
+
+  <div class="show-option">
+    <% if @art.is_for_auction == true %>
+    <div class="auction-card-container">
+      <div class="auction-card">
+        <h4 class="auction-title"><strong>On Auction </strong></h4>
+        <h4 class="auction-title"> Starting Price: € <%= @art.starting_price %></h4>
+        <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#exampleModal">Place a bid</button>
+      </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <%= render partial: "bids/form", locals: {bid: Bid.new, art: @art} %>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+    <% else %>
+    <div class="sale-card-container">
+      <div class="sale-card">
+        <h4 class="sale-title">On Sale</h4>
+        <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#exampleModal">Purchase Ourtwork</button>
+      </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <%= render partial: "transactions/form", locals: {transaction: Transaction.new, art: @art} %>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <% end %>
 
-<% if @art.is_for_auction == true %>
-  <%= render partial: 'shared/auction_card' %>
-<% end %>
-
+  </div>
 </div>

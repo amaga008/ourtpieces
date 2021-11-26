@@ -2,6 +2,11 @@ class TransactionsController < ApplicationController
   def show
   end
 
+  def new
+    @art = Art.find(params[:art_id])
+    @transaction = Transaction.new
+  end
+
   def create
     @art = Art.find(params[:art_id])
     @transaction = Transaction.new(transaction_params)
@@ -9,7 +14,7 @@ class TransactionsController < ApplicationController
     @transaction.user = current_user
 
     if @transaction.save
-      redirect_to transaction_path(@transaction)
+      redirect_to art_transaction_path(@transaction)
     else
       render 'art/show'
     end
@@ -18,6 +23,6 @@ class TransactionsController < ApplicationController
   private
 
   def transaction_params
-    params.require(:transaction).permit(:amount)
+    params.permit(:amount)
   end
 end

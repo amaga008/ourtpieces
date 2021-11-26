@@ -82,11 +82,13 @@
   font-weight: bolder;
 }
 
+
 .profile-create {
   background-color: palevioletred;
   line-height: 1;
   margin: 5px;
   padding: 14px;
+  color: rgb(255, 255, 255);
   color: white;
   border: lightpink;
   border-radius: 10px;
@@ -94,6 +96,9 @@
   font-weight: bolder;
 }
 
+.btn-drop:hover {
+  box-shadow: 0 0 6px palevioletred;
+}
 .profile-create:hover {
   background-color: black;
   line-height: 1;

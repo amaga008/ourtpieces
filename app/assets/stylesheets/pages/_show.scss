@@ -1,26 +1,69 @@
-.show-body {
+.show-full-body {
   display: flex;
-  justify-content: left;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
 }
 
+.show-body-container {
+  margin-left: 3%;
+  width: 80%;
+}
 
-.show-text-container {
-  margin-top: 6%;
-  max-width: 30%;
+.show-body {
   display: flex;
+  justify-content:last baseline;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.show-title-container {
+  display: flex;
+  margin-top: 6%;
+  margin-left: 5%;
+  max-width: 100%;
   flex-direction: column;
   gap: 10px;
 }
 
+.show-page-title {
+  font-size: 30px;
+  color: rgb(56, 56, 55);
+  margin: 0px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+.show-option {
+  margin-top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
 .show-container {
-  margin-top: 5%;
-  margin-left: 3%;
+  margin-top: 1%;
+  margin-left: 5%;
   margin-right: 2%;
-  max-width: 40%;
+  max-width: 100%;
   img {
     max-width: 100%;
     max-height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
+}
+
+.show-text-container {
+  margin-top: 0%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 5%;
+  width: 100%;
+}
+
+.show-page-texts {
+  font-size: 20px;
+  color: rgb(56, 56, 55);
+  margin: 0px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
