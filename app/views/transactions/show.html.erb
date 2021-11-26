@@ -1,0 +1,21 @@
+<div class="banner-transaction" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://images.e-flux-systems.com/283237_588943ecc546db7cc5168e868a7848e7.jpg,1920);">
+    <div class="d-flex justify-content-center">
+    <div class="card-new-art text-center">
+      <h1 >Congratulations</h1>
+      <br>
+      <br>
+      <br>
+      <h2> Your <%=@art.title%> is purchased</h2>
+      <br>
+      <br>
+      <h3>Total Price €<%=@transaction.amount%></h3>
+      <br>
+      <br>
+      <%= link_to 'Find other Artworks', arts_path, class:'btn profile-create'%>
+      <br>
+      <br>
+      <%= link_to 'Go to your Profile', profile_path, class:'btn purchase'%>
+      <br>
+    </div>
+    </div>
+  </div>
