@@ -96,6 +96,19 @@
   font-weight: bolder;
 }
 
+.purchase {
+  background-color: whitesmoke;
+  line-height: 1;
+  margin: 5px;
+  padding: 14px;
+  color: palevioletred(255, 255, 255);
+  color: palevioletred;
+  border: lightpink;
+  border-radius: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: bolder;
+}
+
 .btn-drop:hover {
   box-shadow: 0 0 6px palevioletred;
 }
