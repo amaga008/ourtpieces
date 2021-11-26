@@ -1,4 +1,5 @@
 puts "Cleaning database..."
+Transaction.destroy_all
 Art.destroy_all
 User.destroy_all
 puts "Creating arts and users..."
