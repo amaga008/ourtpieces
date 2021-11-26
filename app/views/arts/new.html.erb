@@ -5,6 +5,7 @@
         <div class="row">
           <div class="col-sm-12">
             <%= simple_form_for @art do |f| %>
+              <%= f.input :title, label: "Creator", label_html: { class:"text-input-white"} %>
               <%= f.input :title, label_html: { class:"text-input-white"} %>
               <%= f.input :description, label_html: { class:"text-input-white"} %>
               <%= f.input :category, label_html: { class:"text-input-white"}%>
