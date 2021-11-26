@@ -1,5 +1,7 @@
 class TransactionsController < ApplicationController
   def show
+    @art = Art.find(params[:art_id])
+    @transaction = Transaction.find(params[:id])
   end
 
   def new
@@ -14,7 +16,7 @@ class TransactionsController < ApplicationController
     @transaction.user = current_user
 
     if @transaction.save
-      redirect_to art_transaction_path(@transaction)
+      redirect_to art_transaction_path(@art, @transaction)
     else
       render 'art/show'
     end
