@@ -94,11 +94,9 @@
 }
 
 .auction-card {
-  background-color: red;
-}
-
-.auction-card h4 {
-  color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .card-new-art {
