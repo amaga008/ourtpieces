@@ -59,7 +59,12 @@
   width: 100px;
 }
 
+.filter-style-button:hover {
+  box-shadow: 0 0 6px rgb(99, 35, 227);
+}
+
 #filter-text {
-  color: rgb(84, 28, 196);
+  color: rgb(63, 20, 150);
   font-weight: bolder;
+  margin-left: 150px;
 }

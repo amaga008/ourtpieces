@@ -28,18 +28,20 @@
 
 
   <div class="container mt-5">
-  <p class="ml-4"> Filter By</p>
+  <p id="filter-text"> Filter By</p>
     <div class= filters-container d-flex>
     <div class="d-flex col-6">
-         <div class="filter-style-button">
+    <div class="filter dropdown">
+         <button class="filter-style-button" type="button" data-toggle="dropdown">
         Status
-         </div>
-          <div class="filter-style-button">
+         </button>
+          <button class="filter-style-button" type="button" data-toggle="dropdown">
         Category
-         </div>
-        <div class="filter-style-button">
+         </button>
+         <button class="filter-style-button" type="button" data-toggle="dropdown">
         Price
-         </div>
+         </button>
+      </div>
       </div>
       <div class= "dropdown">
           <button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown">Sort By
@@ -74,6 +76,8 @@
             <div>
               <h2 class="card-title"><%= art.title %></h2>
               <p class="card-text"> <%= art.user.username %></p>
+              <p class="card-text"> <%= art.is_for_auction %></p>
+              <p class="card-text"> <strong>Price: €<%= art.starting_price %></strong></p>
             </div>
           </div>
          </div>
