@@ -7,6 +7,9 @@ class ArtsController < ApplicationController
     @art = Art.new(art_params)
     @art.user = current_user
     if @art.save
+      if @art.is_for_auction
+        Bid.create(amount: @art.starting_price, bid_timestamp:Time.now, user_id: current_user.id, art_id: @art.id)
+      end
       redirect_to arts_path
     else
       render :new
@@ -30,6 +33,7 @@ class ArtsController < ApplicationController
 
   def show
     @art = Art.find(params[:id])
+    @bids = Bid.where(art_id: @art.id).order(bid_timestamp: :desc)
   end
 
   private

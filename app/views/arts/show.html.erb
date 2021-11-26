@@ -7,7 +7,7 @@
       </div>
       <div class= "show-container">
         <% if @art.photo.attached? %>
-          <%= cl_image_tag art.photo.key, height: 300, width: 400, crop: :fill %>
+          <%= cl_image_tag @art.photo.key, height: 300, width: 400, crop: :fill %>
         <% else  %>
           <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg" />
         <% end %>
@@ -32,11 +32,18 @@
           <h5 class="auction-title mb-3"> Starting Price: € <%= @art.starting_price %></h5>
           <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#exampleModal">Place a bid</button>
           <h5 class="mt-4">Current Bids</h5>
-          <table class="mt-4">
+          <h3>Due: 7 days</h3>
+          <table class="table-show mt-4">
             <tr>
               <th>Username</th>
               <th>Amount</th>
             </tr>
+            <% @bids.each do |bid|  %>
+            <tr>
+              <td><%= bid.user.username  %></td>
+              <td><%= bid.amount  %></td>
+            </tr>
+            <% end %>
             <tr>
               <td>@jesuer278</td>
               <td>2358</td>
@@ -46,11 +53,11 @@
               <td>1867</td>
             </tr>
             <tr>
-              <td>@jesuer278</td>
+              <td>@franciny24874</td>
               <td>1653</td>
             </tr>
             <tr>
-              <td>@jesuer278</td>
+              <td>@adaloup4840</td>
               <td>560</td>
             </tr>
           </table>
@@ -60,7 +67,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Bid now!</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -87,7 +94,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Buy now!</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
