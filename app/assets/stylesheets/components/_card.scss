@@ -93,64 +93,12 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
-.card-show-description {
-  overflow: hidden;
-  width: 560px;
-  border-radius: 15px 15px;
-  margin-bottom: 3%;
-  margin-left: 16px;
-  margin-top: 2%;
-  padding: 2%;
-}
-
-.card-show-description h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 4px;
-  color: rgb(88, 87, 87);
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-
-}
-
-.card-show-description p {
-  font-size: 10px;
-  margin: 0;
-  color: rgb(88, 87, 87);
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-}
-
 .auction-card {
-  background-color: rgba(255, 255, 255, 0.308);
-}
-
-.auction-card-container {
-  border-radius: 20px;
-  margin-bottom: 20px;
-  margin-left: 150px;
-  width: 500px;
-  padding: 40px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: red;
 }
 
 .auction-card h4 {
-  color: rgb(49, 8, 8);
-}
-
-.sale-card-container {
-  border-radius: 20px;
-  margin-bottom: 20px;
-  margin-left: 150px;
-  width: 500px;
-  padding: 40px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-.sale-card {
-  background-color: rgba(255, 255, 255, 0.308);
-}
-
-.sale-card h4 {
-  color: rgb(49, 8, 8);
+  color: white;
 }
 
 .card-new-art {
@@ -160,4 +108,22 @@
   border: 5px palevioletred;
   border-style: solid;
   background-color: transparent;
+}
+
+.card-new-html {
+  height: fit-content;
+  width: fit-content;
+  padding: 50px;
+  border: 5px solid palevioletred;
+  background-color: whitesmoke;
+}
+
+.page-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.david {
+  min-height: 80vh;
 }
