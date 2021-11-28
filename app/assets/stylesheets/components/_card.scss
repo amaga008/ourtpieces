@@ -94,9 +94,10 @@
 }
 
 .auction-card {
+  width: 400px;
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
-  border-radius: 5px;
-  padding: 20px;
+  border-radius: 15px;
+  padding: 50px;
 }
 
 .card-new-art {
@@ -124,4 +125,11 @@
 
 .david {
   min-height: 80vh;
+}
+
+.sale-card-container {
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  border-radius: 15px;
+  padding: 50px;
 }
