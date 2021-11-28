@@ -7,7 +7,7 @@
       </div>
       <div class= "show-container">
         <% if @art.photo.attached? %>
-          <%= cl_image_tag @art.photo.key, height: 200, width: 200, crop: :fill %>
+          <%= cl_image_tag @art.photo.key%>
         <% else  %>
           <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg" />
         <% end %>
@@ -84,12 +84,13 @@
       </div>
     </div>
     <% else %>
-      <div class="sale-card-container">
+      <div class="d-flex justify-content-center sale-card-container">
         <div class="sale-card">
           <h2 class="sale-title">On Sale</h2>
           <h4>€<%= @art.starting_price %></h4>
           <button type="button" class="home-explore" data-toggle="modal" data-target="#exampleModal">Purchase Ourtwork</button>
         </div>
+      </div>
     <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
