@@ -1,1 +1,32 @@
 // Specific CSS for your home-page
+.value-prop-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.value-prop-card {
+  width: 300px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+}
+
+.value-prop-card img {
+  height: 100px;
+}
+
+.home-title {
+  color: white;
+  font-weight: normal;
+  font-size: 30px;
+  width: 690px;
+}
+
+.home-subtitle {
+  color:lightpink;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: lighter;
+}
