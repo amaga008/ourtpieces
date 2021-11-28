@@ -3,9 +3,10 @@
   <video autoplay loop muted class="banner__video" poster="https://mixkit.imgix.net/videos/preview/mixkit-abstract-psychedelic-texture-in-motion-red-and-white-tones-12309-0.jpg?q=80&auto=format%2Ccompress">
     <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-psychedelic-texture-in-motion-red-and-white-tones-12309-large.mp4" type="video/webm">
   </video>
-    <div class="d-flex justify-content-between">
+    <div class="d-flex">
       <div>
-        <h1>Be part of the NFT revolution, buy your OURTPIECE today!</h1>
+        <h2 class = "home-title"><strong>From Fine Art to NFTs</strong> <br> An investment avenue for Artists & Investors alike</h2>
+        <h4 class = "home-subtitle"> Be part of the NFT revolution, buy your OURTPIECE today!</h4>
         <div class="inline-block">
           <%= link_to "Explore", arts_path, class: "home-explore mr-3" %>
           <%= link_to "Create", new_art_path, class: "home-create mr-3" %>
@@ -31,9 +32,32 @@
 <br>
 <br>
 <br>
+<div class ="container">
+  <h2 class="value-prop-title text-center mb-3">Collect, Buy & Sell: The Process</h2>
+    <div class="value-prop-cards">
+      <div class="value-prop-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2039/2039060.png">
+        <h4><strong>Sign Up</strong></h4>
+        <p>Simple Process: <br> 1. Complete account details <br> 2. Link your Crypto Wallet<br>3. Wait for verification !</p>
+      </div>
+      <div class="value-prop-card">
+        <img src="https://cdn-icons.flaticon.com/png/512/1911/premium/1911209.png?token=exp=1638113523~hmac=313c4aa04b27a4724b56fa5e012ae505">
+        <h4><strong>For Ourtists</strong></h4>
+        <p>Increased Exposure ! <br> Upload your OurtPiece - List it as an auction or regular sale!</p>
+      </div>
+      <div class="value-prop-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4334/4334582.png">
+        <h4><strong>For Ourt Collectors & Investors</strong></h4>
+        <p>New Investment Avenue! <br> Explore all Ourtists - Bid on Ourt or purchase now!</p>
+      </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
 
 <div class="container">
-  <h1 class="text-center mb-5">Filter By Category</h1>
+  <h2 class="text-center mb-5">Filter By Category</h2>
   <div class="d-flex justify-content-center">
     <div class="col-3">
       <%= link_to arts_path(utf8: "✓" , :query => "category", button: ""), style: "text-decoration: none;" do %>
