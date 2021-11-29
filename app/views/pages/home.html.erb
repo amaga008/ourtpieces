@@ -8,8 +8,8 @@
         <h2 class = "home-title"><strong>From Fine Art to NFTs</strong> <br> An investment avenue for Artists & Investors alike</h2>
         <h4 class = "home-subtitle"> Be part of the NFT revolution, buy your OURTPIECE today!</h4>
         <div class="inline-block">
-          <%= link_to "Explore", arts_path, class: "home-explore mr-3" %>
-          <%= link_to "Create", new_art_path, class: "home-create mr-3" %>
+          <%= link_to "Explore", arts_path, class: "home-explore" %>
+          <%= link_to "Create", new_art_path, class: "home-create" %>
         </div>
       </div>
         <div>
@@ -33,22 +33,22 @@
 <br>
 <br>
 <div class ="container">
-  <h2 class="value-prop-title text-center mb-3">Collect, Buy & Sell: The Process</h2>
+  <h4 class="value-prop-subtitle text-center mb-3"> The Process </h4>
     <div class="value-prop-cards">
       <div class="value-prop-card">
         <img src="https://cdn-icons-png.flaticon.com/512/2039/2039060.png">
         <h4><strong>Sign Up</strong></h4>
-        <p>Simple Process: <br> 1. Complete account details <br> 2. Link your Crypto Wallet<br>3. Wait for verification !</p>
+        <p><strong>Simple Process: </strong><br> 1. Complete account details <br> 2. Link your Crypto Wallet<br>3. Wait for verification !</p>
       </div>
       <div class="value-prop-card">
         <img src="https://cdn-icons.flaticon.com/png/512/1911/premium/1911209.png?token=exp=1638113523~hmac=313c4aa04b27a4724b56fa5e012ae505">
         <h4><strong>For Ourtists</strong></h4>
-        <p>Increased Exposure ! <br> Upload your OurtPiece - List it as an auction or regular sale!</p>
+        <p><strong>Increased Exposure ! </strong> <br> 1. Upload your OurtPiece <br> 2. List as an auction or regular sale <br> 3. Wait until it has been purchased</p>
       </div>
       <div class="value-prop-card">
         <img src="https://cdn-icons-png.flaticon.com/512/4334/4334582.png">
-        <h4><strong>For Ourt Collectors & Investors</strong></h4>
-        <p>New Investment Avenue! <br> Explore all Ourtists - Bid on Ourt or purchase now!</p>
+        <h4><strong>For Ourt Collectors</strong></h4>
+        <p><strong>New Investment Avenue!</strong><br> 1. Explore all Ourtists <br> 2. Bid on Ourt or purchase now <br> 3. Relist at your convenience</p>
       </div>
     </div>
 </div>
@@ -57,7 +57,7 @@
 <br>
 
 <div class="container">
-  <h2 class="text-center mb-5">Filter By Category</h2>
+  <h2 class=" category-title text-center mb-5">Browse By Category</h2>
   <div class="d-flex justify-content-center">
     <div class="col-3">
       <%= link_to arts_path(utf8: "✓" , :query => "category", button: ""), style: "text-decoration: none;" do %>
