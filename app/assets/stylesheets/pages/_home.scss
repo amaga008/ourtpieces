@@ -6,15 +6,24 @@
 }
 
 .value-prop-card {
-  width: 300px;
+  width: 350px;
   border-radius: 3px;
   text-align: center;
   padding: 20px;
   border: 1px solid rgb(230,230,230);
+  box-shadow:0 0 3px palevioletred;
 }
 
 .value-prop-card img {
   height: 100px;
+}
+
+.value-prop-card h4 {
+color: rgb(164, 65, 98);
+}
+
+.value-prop-card p {
+color: rgb(147, 43, 78);
 }
 
 .home-title {
@@ -29,4 +38,18 @@
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: lighter;
+}
+
+.value-prop-title {
+  color: rgb(0, 0, 0);
+}
+
+.value-prop-subtitle {
+  color: rgb(147, 43, 78);
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.category-title {
+  color:black;
 }

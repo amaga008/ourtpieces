@@ -47,15 +47,16 @@
 }
 
 .home-create:hover {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   line-height: 1;
-  margin: 5px;
-  padding: 14px;
+  margin: 2px;
+  padding: 17px;
   color: palevioletred;
   border: lightpink;
   border-radius: 10px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: bolder;
+  text-decoration: none;
 }
 
 .home-explore {
@@ -71,15 +72,17 @@
 }
 
 .home-explore:hover {
-  background-color: black;
+  background-color:palevioletred;
   line-height: 1;
-  margin: 5px;
-  padding: 14px;
-  color: palevioletred;
+  margin: 2px;
+  padding: 17px;
+  box-shadow: 0 0;
+  color: white;
   border: lightpink;
   border-radius: 10px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: bolder;
+  text-decoration: none;
 }
 
 
