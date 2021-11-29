@@ -49,7 +49,7 @@
                       ),
                     include_blank: "Price",
                     class: "filter-style-button"
-                    %> %>
+                    %>
         <%= select_tag :status,
                     options_from_collection_for_select(
                       Art.status, :to_s, :to_s, params[:status]
