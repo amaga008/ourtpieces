@@ -69,30 +69,13 @@
 
           <table class="table-show mt-4">
             <tr>
-              <th>Username</th>
-              <th>Amount</th>
-            </tr>
-            <% @bids.each do |bid|  %>
-            <tr>
-              <td>@<%= bid.user.username  %></td>
-              <td><%= bid.amount  %></td>
-            </tr>
-            <% end %>
-            <tr>
-              <td>@jesuer278</td>
-              <td>2358</td>
-            </tr>
-            <tr>
-              <td>@maxium3000</td>
-              <td>1867</td>
-            </tr>
-            <tr>
-              <td>@franciny24874</td>
-              <td>1653</td>
-            </tr>
-            <tr>
-              <td>@adaloup4840</td>
-              <td>560</td>
+              <div class="bids"
+                data-controller="art-subscription"
+                data-art-subscription-art-id-value="<%= @art.id %>"
+>
+              <% @art.bids.each do |bid| %>
+                <%= render "bids/bid", bid: bid %>
+              <% end %>
             </tr>
           </table>
         </div>

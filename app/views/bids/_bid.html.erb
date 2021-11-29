@@ -1,0 +1,6 @@
+<%= bid.id %>
+<small>
+  <strong><%= bid.user.username %></strong>
+  <i><%= bid.created_at.strftime("%a %b %e at %l:%M %p") %></i>
+</small>
+<p>€<%= bid.amount %></p>

@@ -1,4 +1,9 @@
 class BidsController < ApplicationController
+ArtChannel.broadcast_to(
+  @art,
+  render_to_string(partial: "bid", locals: {bid: @bid})
+)
+
   def index
     @bids = Bid.all
   end

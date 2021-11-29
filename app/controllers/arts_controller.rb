@@ -36,6 +36,11 @@ class ArtsController < ApplicationController
     @bids = Bid.where(art_id: @art.id).order(bid_timestamp: :desc)
   end
 
+  def subscribed
+    art = Art.find(params[:id])
+    stream_for art
+  end
+
   private
 
   def art_params
