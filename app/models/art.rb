@@ -9,4 +9,16 @@ class Art < ApplicationRecord
   validates :starting_price, presence: true
   validates :category, presence: true
   validates :measurements, presence: true
+
+  def self.category
+    ["paintings", "sculptures", "pottery", "photography", "ceramics"]
+  end
+
+  def self.status
+    ["Sale", "Auction"]
+  end
+
+  # def self.starting_price
+  #   ["€1 - €250", "€251 - €500", "500 + "]
+  # end
 end

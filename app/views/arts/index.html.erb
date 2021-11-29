@@ -32,15 +32,33 @@
     <div class= filters-container d-flex>
     <div class="d-flex col-6">
     <div class="filter dropdown">
-         <button class="filter-style-button" type="button" data-toggle="dropdown">
+         <%# <button class="filter-style-button" type="button" data-toggle="dropdown">
         Status
-         </button>
-          <button class="filter-style-button" type="button" data-toggle="dropdown">
-        Category
-         </button>
-         <button class="filter-style-button" type="button" data-toggle="dropdown">
-        Price
-         </button>
+         </button> %>
+        <%= form_tag arts_path, method: :get do %>
+        <%= select_tag :category,
+                    options_from_collection_for_select(
+                      Art.category, :to_s, :to_s, params[:category]
+                      ),
+                    include_blank: "All Categories",
+                    class: "filter-style-button"
+                    %>
+        <%# <%= select_tag :starting_price,
+                    options_from_collection_for_select(
+                      Art.starting_price, :to_s, :to_s, params[:starting_price]
+                      ),
+                    include_blank: "Price",
+                    class: "filter-style-button"
+                    %> %>
+        <%= select_tag :status,
+                    options_from_collection_for_select(
+                      Art.status, :to_s, :to_s, params[:status]
+                      ),
+                    include_blank: "Status",
+                    class: "filter-style-button"
+                    %>
+                  <%= submit_tag "Search", class: "btn btn-primary" %>
+                  <% end %>
       </div>
       </div>
       <div class= "dropdown">
