@@ -1,6 +1,21 @@
 class ArtsController < ApplicationController
   def index
-    @arts = Art.all
+    if params[:query].present?
+      @arts = Art.search_by_title_and_category(params[:query])
+    else
+      @arts = Art.all
+    end
+    if params[:category].present? && params[:status].present?
+      is_for_auction = params[:status] == "Auction"
+      @arts = Art.where("category ILIKE ?", params[:category]).where(is_for_auction: is_for_auction)
+    elsif params[:category].present?
+      @arts = Art.where("category ILIKE ?", params[:category])
+    elsif params[:status].present?
+      is_for_auction = params[:status] == "Auction"
+      @arts = Art.where(is_for_auction: is_for_auction)
+    else
+      @arts = Art.all
+    end
   end
 
   def create
@@ -9,6 +24,7 @@ class ArtsController < ApplicationController
     if @art.save
       if @art.is_for_auction
         Bid.create(amount: @art.starting_price, bid_timestamp:Time.now, user_id: current_user.id, art_id: @art.id)
+        @art.is_for_sale = false
       end
       redirect_to arts_path
     else
