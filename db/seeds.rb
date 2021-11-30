@@ -6,24 +6,15 @@ Art.destroy_all
 User.destroy_all
 puts "Creating arts and users..."
 
-# avatars = ["Avatar1.jpg", "Avatar2.jpg", "Avatar3.jpg", "Avatar4.jpg", "Avatar5.jpg", "Avatar6.jpg", "Avatar7.jpg", "Avatar8.jpg", "Avatar9.jpg", "Avatar10.jpg"]
-# avatars_to_attach = []
-# avatars.each do |avatar|
-#   uploaded_file = Cloudinary::Uploader.upload(File.join("app/assets/images/apicturews", avatar))
-#   avatars_to_attach << { io: URI.open(uploaded_file['secure_url']), filename: file, content_type: 'image/jpg' }
-#   p "avatar uploded"
-# end
 
-10.times do |i|
-  puts "starting now"
-  User.create!(
-    email: Faker::Internet.email,
+  user = User.create!(
+    email: "user@gmail.com",
     password: "123123",
-    username: Faker::Internet.username,
-    photo: avatars[i]
+    username: "Test"
   )
-  puts "created all user"
-end
+
+user.photo.attach(io: File.open('app/assets/images/apicturews/Avatar1.jpg'), filename: 'Avatar1.jpg')
+
 
 art_photos = [
   'https://res.cloudinary.com/ourtpieces/image/upload/v1637927418/development/5ql7dsuigzlp8mgsg9hjy7aelqbe.jpg',
