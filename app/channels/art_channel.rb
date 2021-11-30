@@ -1,6 +1,6 @@
 class ArtChannel < ApplicationCable::Channel
   def subscribed
-    art = ArtChannel.find(params[:id])
+    art = Art.find(params[:id])
     stream_for art
   end
 
