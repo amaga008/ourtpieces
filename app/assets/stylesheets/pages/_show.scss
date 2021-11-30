@@ -67,6 +67,7 @@
   color: rgb(56, 56, 55);
   margin: 0px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  text-align: justify;
 }
 
 .description-background {
@@ -75,7 +76,21 @@
 }
 
 .table-show {
-  margin: 0 auto;
+  padding: 50px;
+  border-radius: 15px;
+  margin: auto auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  td {
+    margin-right: 30px;
+  }
+  td {
+    width: 800px;
+  }
+}
+
+table {
+  width: 100%;
+  text-align: center;
 }
 
 .auction-end {

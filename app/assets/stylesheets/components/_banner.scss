@@ -49,6 +49,29 @@
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
 }
 
+.banner-show-1 {
+  height: fit-content;
+  padding: 50px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://media.istockphoto.com/photos/abstract-painted-art-background-picture-id1124507971?b=1&k=20&m=1124507971&s=170667a&w=0&h=xof4TqSElI7NgQC8k6iv3ywknXGii7ZJyOJ3vaPXYNU=");
+
+}
+
+.banner-show-2 {
+  height: fit-content;
+  padding: 50px;
+  overflow: hidden;
+  background-color: white;
+  img {
+    width:350px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+}
+
 .banner-index {
   background-size: cover;
   background-position: center;
