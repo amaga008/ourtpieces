@@ -6,17 +6,21 @@ class ArtsController < ApplicationController
       @arts = Art.all
     end
     if params[:category].present? && params[:status].present?
-      is_for_auction = params[:status] == "Auction"
-      @arts = Art.where("category ILIKE ?", params[:category]).where(is_for_auction: is_for_auction)
+      @arts = Art.where("category ILIKE ?", params[:category]).where(is_for_auction: true)
     elsif params[:category].present?
       @arts = Art.where("category ILIKE ?", params[:category])
     elsif params[:status].present?
-      is_for_auction = params[:status] == "Auction"
-      @arts = Art.where(is_for_auction: is_for_auction)
+      if params[:status] == "Auction"
+        @arts = Art.where(is_for_auction: true)
+      else
+        @arts = Art.where(is_for_auction: false)
+      end
     else
       @arts = Art.all
     end
   end
+
+
 
   def create
     @art = Art.new(art_params)
