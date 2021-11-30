@@ -90,7 +90,13 @@
             <div>
               <h2 class="card-title"><%= art.title %></h2>
               <p class="card-text"> <%= art.user.username %></p>
-              <p class="card-text"> <%= art.is_for_auction %></p>
+              <p class="card-text">
+              <% if art.is_for_auction %>
+              <%= "On Auction" %>
+              <% else %>
+              <%= "On Sale" %>
+              <% end %>
+              </p>
               <p class="card-text"> <strong>Price: €<%= art.starting_price %></strong></p>
             </div>
           </div>
