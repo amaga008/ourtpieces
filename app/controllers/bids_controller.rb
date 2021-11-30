@@ -16,6 +16,8 @@ class BidsController < ApplicationController
         @art,
         render_to_string(partial: "bid", locals: {bid: @bid})
       )
+      @art.user_id = current_user.id
+      @art.save
       redirect_to art_path(@art), notice: 'Your bid has been successfully added'
     else
       render 'arts/show', notice: 'Sorry, your bid is invalid'

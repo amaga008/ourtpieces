@@ -1,5 +1,5 @@
 const modals = () => {
-  console.log("hello")
+  // console.log("hello")
 }
 
 export {modals}
