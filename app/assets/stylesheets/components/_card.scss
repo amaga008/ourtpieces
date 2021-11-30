@@ -26,6 +26,7 @@
   height: 200px;
   width: 100%;
   object-fit: cover;
+  ;
 }
 
 .card-art h2 {
@@ -62,10 +63,16 @@
   width: 40px;
 }
 
+.featured:hover {
+  width: 370px;
+  box-shadow: 0 0 25px palevioletred;
+}
+
 .card-category {
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 200px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +88,8 @@
 .card-category:hover {
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 210px;
+  width: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +98,7 @@
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(133, 94, 94, 0.4);
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px palevioletred;
 }
 
 .auction-card {
