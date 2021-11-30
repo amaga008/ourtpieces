@@ -37,52 +37,47 @@
 .home-create {
   background-color: white;
   line-height: 1;
-  margin: 8px;
+  margin:3px;
   padding: 17px;
   color: palevioletred;
   border: lightpink;
   border-radius: 10px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-weight: bolder;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 20px;
 }
 
 .home-create:hover {
-  background-color: rgb(255, 255, 255);
-  line-height: 1;
   margin: 5px;
-  padding: 20px;
+  padding: 18.5px;
   box-shadow: 0 0 15px palevioletred;
   color: palevioletred;
-  border: lightpink;
-  border-radius: 10px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-weight: bolder;
   text-decoration: none;
 }
 
 .home-explore {
   background-color: palevioletred;
   line-height: 1;
-  margin: 8px;
+  margin: 3px;
   padding: 17px;
   color: white;
   border: lightpink;
   border-radius: 10px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-weight: bolder;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 20px;
 }
 
 .home-explore:hover {
-  background-color:palevioletred;
-  line-height: 1;
   margin: 5px;
-  padding: 20px;
+  padding: 18.5px;
   box-shadow: 0 0 15px palevioletred;
   color: white;
-  border: lightpink;
   border-radius: 10px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-weight: bolder;
   text-decoration: none;
 }
 

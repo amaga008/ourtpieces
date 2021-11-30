@@ -12,6 +12,12 @@
   padding: 20px;
   border: 1px solid rgb(230,230,230);
   box-shadow:0 0 3px palevioletred;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.value-prop-card:hover {
+  box-shadow:0 0 15px palevioletred;
 }
 
 .value-prop-card img {
@@ -19,37 +25,57 @@
 }
 
 .value-prop-card h4 {
-color: rgb(164, 65, 98);
+color: rgb(186, 66, 106);
+font-size:26px;
 }
 
 .value-prop-card p {
-color: rgb(147, 43, 78);
+color: rgb(186, 66, 106);
 }
 
 .home-title {
   color: white;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 35px;
   width: 690px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
 }
+
 
 .home-subtitle {
   color:lightpink;
   margin-bottom: 30px;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: lighter;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
 }
 
-.value-prop-title {
-  color: rgb(0, 0, 0);
-}
 
 .value-prop-subtitle {
-  color: rgb(147, 43, 78);
+  color: rgb(212, 77, 122);
   font-weight: normal;
-  font-size: 30px;
+  font-size: 40px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-style: italic;
 }
 
 .category-title {
-  color:black;
+  color: rgb(212, 77, 122);
+  font-weight: normal;
+  font-size: 40px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-style: italic;
+}
+
+.featured-title {
+    color: rgb(212, 77, 122);
+  font-weight: normal;
+  font-size: 40px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-style: italic;
 }
