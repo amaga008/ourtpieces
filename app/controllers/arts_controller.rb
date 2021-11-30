@@ -53,12 +53,12 @@ class ArtsController < ApplicationController
 
   def show
     @art = Art.find(params[:id])
-    @bids = Bid.where(art_id: @art.id).order(bid_timestamp: :desc)
+    @bids = Bid.where(art_id: @art.id).order(bid_timestamp: :asc)
   end
 
   private
 
   def art_params
-    params.require(:art).permit(:title, :description, :starting_price, :measurements, :category, :is_for_auction, :is_for_sale, :photo)
+    params.require(:art).permit(:title, :description, :starting_price, :measurements, :category, :is_for_auction, :is_for_sale, :auction_end_time, :photo)
   end
 end
