@@ -28,9 +28,8 @@
 
 
   <div class="container mt-5">
-    <div class= filters-container d-flex>
+    <div class= "filters-container">
     <div class="d-flex col-12">
-    <p id="filter-text"> Filter By</p>
     <div class="filter dropdown">
         <%= form_tag arts_path, method: :get do %>
         <%= select_tag :category,
@@ -40,33 +39,16 @@
                     include_blank: "All Categories",
                     class: "filter-style-button"
                     %>
-        <%# <%= select_tag :starting_price,
-                    options_from_collection_for_select(
-                      Art.starting_price, :to_s, :to_s, params[:starting_price]
-                      ),
-                    include_blank: "Price",
-                    class: "filter-style-button"
-                    %>
+
         <%= select_tag :status,
                     options_from_collection_for_select(
                       Art.status, :to_s, :to_s, params[:status]
                       ),
                     include_blank: "Status",
                     class: "filter-style-button" %>
-                  <%= submit_tag "Search", class: "filter-search-btn" %>
+                  <%= submit_tag "Set Filters", class: "filter-search-btn" %>
                   <% end %>
       </div>
-      </div>
-      <%# <div class= "dropdown">
-          <button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown">Sort By
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Price: High-Low</a></li>
-            <li><a href="#">Price: Low-High</a></li>
-            <li><a href="#">Newest First</a></li>
-            <li><a href="#">Oldest First</a></li>
-          </ul>
-      </div> %>
     </div>
     </div>
   </div>
