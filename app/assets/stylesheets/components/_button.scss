@@ -37,8 +37,8 @@
 .home-create {
   background-color: white;
   line-height: 1;
-  margin: 5px;
-  padding: 14px;
+  margin: 8px;
+  padding: 17px;
   color: palevioletred;
   border: lightpink;
   border-radius: 10px;
@@ -49,8 +49,9 @@
 .home-create:hover {
   background-color: rgb(255, 255, 255);
   line-height: 1;
-  margin: 2px;
-  padding: 17px;
+  margin: 5px;
+  padding: 20px;
+  box-shadow: 0 0 15px palevioletred;
   color: palevioletred;
   border: lightpink;
   border-radius: 10px;
@@ -62,8 +63,8 @@
 .home-explore {
   background-color: palevioletred;
   line-height: 1;
-  margin: 5px;
-  padding: 14px;
+  margin: 8px;
+  padding: 17px;
   color: white;
   border: lightpink;
   border-radius: 10px;
@@ -74,9 +75,9 @@
 .home-explore:hover {
   background-color:palevioletred;
   line-height: 1;
-  margin: 2px;
-  padding: 17px;
-  box-shadow: 0 0;
+  margin: 5px;
+  padding: 20px;
+  box-shadow: 0 0 15px palevioletred;
   color: white;
   border: lightpink;
   border-radius: 10px;
