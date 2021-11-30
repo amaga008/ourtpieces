@@ -81,3 +81,28 @@
   color: rgb(99, 35, 227);
   border-color: rgb(99, 35, 227);
 }
+
+.filters-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.filters-container:after {
+  content: '>';
+  color: rgb(99, 35, 227);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-weight: bolder;
+  right: 11px;
+  top: 18px;
+  padding: 0 0 2px;
+}
+
+.filters-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

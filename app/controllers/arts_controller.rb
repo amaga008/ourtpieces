@@ -1,11 +1,8 @@
 class ArtsController < ApplicationController
   def index
     if params[:query].present?
-      @arts = Art.search_by_title_and_category(params[:query])
-    else
-      @arts = Art.all
-    end
-    if params[:category].present? && params[:status].present?
+      @arts = Art.where("title ILIKE ?", params[:query])
+    elsif params[:category].present? && params[:status].present?
       @arts = Art.where("category ILIKE ?", params[:category]).where(is_for_auction: true)
     elsif params[:category].present?
       @arts = Art.where("category ILIKE ?", params[:category])
