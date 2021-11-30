@@ -1,9 +1,4 @@
 class BidsController < ApplicationController
-ArtChannel.broadcast_to(
-  @art,
-  render_to_string(partial: "bid", locals: {bid: @bid})
-)
-
   def index
     @bids = Bid.all
   end
@@ -17,6 +12,10 @@ ArtChannel.broadcast_to(
     if @bid.amount <= @previous_bid.amount
       redirect_to art_path(@art), notice: 'Unfortunately your bid is too low'
     elsif @bid.save
+      ArtChannel.broadcast_to(
+        @art,
+        render_to_string(partial: "bid", locals: {bid: @bid})
+      )
       redirect_to art_path(@art), notice: 'Your bid has been successfully added'
     else
       render 'arts/show', notice: 'Sorry, your bid is invalid'

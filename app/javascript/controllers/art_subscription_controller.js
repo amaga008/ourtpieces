@@ -10,11 +10,11 @@ export default class extends Controller {
     { received: data => console.log(data) }
   )
   console.log(`Subscribed to the art with the id ${this.artIdValue}.`);
-}
+}}
 
-received: data => this.element.insertAdjacentHTML("beforeend", data)
+  received: data => this.element.insertAdjacentHTML("beforeend", data)
 
-disconnect() {
-  console.log("Unsubscribed from the chatroom")
-  this.channel.unsubscribe()
-}
+  //disconnect() {
+    //console.log("Unsubscribed from the chatroom")
+    //this.channel.unsubscribe()
+  //}
