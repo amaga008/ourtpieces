@@ -2,8 +2,8 @@
 
   <div class="banner-index">
       <div class="container">
-        <video autoplay loop muted class="banner__video" poster="https://c.tenor.com/BhwW-9FnHtMAAAAd/vincent-van-gogh-starry-starry-night.gif">
-          <source src="https://c.tenor.com/BhwW-9FnHtMAAAAd/vincent-van-gogh-starry-starry-night.gif" type="video/webm">
+        <video autoplay loop muted class="banner__video" poster="https://i.vimeocdn.com/video/762930924-46c36d4deea4983c002069dd43b31f933fad0f7a19f0871a21c2d178e076c029-d?mw=1600&mh=900&q=70">
+          <source src="https://player.vimeo.com/external/320492085.sd.mp4?s=80ceedafef53a1691ca3c891529c19aa0f586b68&profile_id=164&oauth2_token_id=57447761" type="video/webm">
         </video>
           <div class="page-title"><h1>Look Through All OurtPieces</h1>
           </div>
@@ -46,7 +46,7 @@
                       ),
                     include_blank: "Status",
                     class: "filter-style-button" %>
-                  <%= submit_tag "Set Filters", class: "filter-search-btn" %>
+                  <%= submit_tag "Apply", class: "filter-search-btn" %>
                   <% end %>
       </div>
     </div>
@@ -58,10 +58,10 @@
 
 
   <div class="container mt-5">
-    <div class="row justify-content-between">
+    <div class="row justify-content-left">
       <% @arts.each do |art| %>
         <%= link_to art do %>
-        <div class="card-art">
+        <div class="card-art mr-4">
           <% if art.photo.attached? %>
             <%= cl_image_tag art.photo.key, height: 300, width: 400, crop: :fill %>
           <% else  %>
