@@ -81,7 +81,7 @@
       <div class="bids"
         data-controller="art-subscription"
         data-art-subscription-art-id-value="<%= @art.id %>">
-      <% @art.bids.reverse.each do |bid| %>
+      <% @art.bids.each do |bid| %>
         <%= render "bids/bid", bid: bid %>
       <% end %>
     </tr>
