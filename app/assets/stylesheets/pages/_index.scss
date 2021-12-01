@@ -81,8 +81,49 @@
    appearance: none;
    -webkit-appearance: none;
    -moz-appearance: none;
+   margin-left: 0;
  }
 
+.container-nopad{
+  padding-left: 0;
+}
+
+.arrow-down {
+  p {
+   position: absolute;
+  top: 18px;
+  left: 143px;
+  cursor: pointer;
+  transform: rotateZ(90deg);
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+  }
+}
+
+.arrow-down2 {
+  p {
+   position: absolute;
+  top: 18px;
+  left: 318px;
+  cursor: pointer;
+  transform: rotateZ(90deg);
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+  }
+}
+
+.dropdown {
+  form {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    select {
+      cursor: pointer;
+    }
+  }
+}
 // .filter-dropdown {
 //   position: relative;
 // }
