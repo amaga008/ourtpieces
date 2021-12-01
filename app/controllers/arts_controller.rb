@@ -3,7 +3,11 @@ class ArtsController < ApplicationController
     if params[:query].present?
       @arts = Art.where("title ILIKE ?", params[:query])
     elsif params[:category].present? && params[:status].present?
-      @arts = Art.where("category ILIKE ?", params[:category]).where(is_for_auction: true)
+      if params[:status] == "Auction"
+        @arts = Art.where("category ILIKE ?", params[:category]).where(is_for_auction: true)
+      else
+        @arts = Art.where("category ILIKE ?", params[:category]).where(is_for_auction: false)
+      end
     elsif params[:category].present?
       @arts = Art.where("category ILIKE ?", params[:category])
     elsif params[:status].present?
