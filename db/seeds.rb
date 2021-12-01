@@ -18,7 +18,7 @@ art_photos = [
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/download-1_oh4v37.jpg', #(Random Street Phtography)
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638285081/production/images_xt70mv.jpg', #(Cyrielle Gylacsi Photography)
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/images-2_tbjdir.jpg', #(Clara Jebsen Photography)
-  'https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/download-3_f4ypes.jpg', #(Cindy Sherman Photo)
+  'https://res.cloudinary.com/ourtpieces/image/upload/v1638359537/production/2400_slptha.jpg', #(Cindy Sherman Photo)'
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/download-2_vlwrzo.jpg', #(Cindy Shermann Photo2)
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/images-7_hyfa6k.jpg', #(Wangechi Mutu Collage)
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/images_koi8zk.jpg', #(Wangechi Mutu Collage)
@@ -29,7 +29,7 @@ art_photos = [
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/images-5_kguu8o.jpg', #(Painting Ines Lonegvial)
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/images_dpoqgz.jpg', #(Instillation Bea Bonafini)
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/download_xynuv9.jpg', #(Drawing Bea Bonafini)
-  'https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/images-1_vb8i6k.jpg', #(Painting Emilia Auerspreg)
+  'https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/download-2_u7mruu.jpg', #(Painting Emilia Auerspreg)
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/images-3_ho69ax.jpg', #(Painting ines longevial)
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638287565/production/images_puyico.jpg', #(Antique Sculpture)
   'https://res.cloudinary.com/ourtpieces/image/upload/v1638287563/production/images-1_v1y6qi.jpg', #Antique Oainting)
@@ -59,7 +59,7 @@ art_filenames = [
   'images-1_v1y6qi.jpg',
 ]
 
-emilia = User.create!(email: "emilia@test.com", password: '123123', username: 'Emilia Auersperg')
+emilia = User.create!(email: "emilia@test.com", password: '123123', username: 'EmiliaAuer')
 emilia_art = Art.create!(
   title: 'Emilia Auersperg Skulptur',
   description: 'Awesome sculpture',
@@ -67,7 +67,7 @@ emilia_art = Art.create!(
   user_id: emilia.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: emilia.username,
   is_for_auction: [true, false].sample
 )
 emilia_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285693/production/download-1_xwkmrn.jpg'), filename: 'download-1_xwkmrn.jp')
@@ -81,14 +81,14 @@ emilia_art_two = Art.create!(
   user_id: emilia.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: emilia.username,
   is_for_auction: [true, false].sample
 )
-emilia_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/images-1_vb8i6k.jpg'), filename: 'images-1_vb8i6k.jpg')
+emilia_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/download-2_u7mruu.jpg'), filename: 'download-2_u7mruu.jpg')
 
 puts "Auersperg Painting"
 
-erwin = User.create!(email: "erwin@test.com", password: '555555', username: 'Erwin Wurm')
+erwin = User.create!(email: "erwin@test.com", password: '555555', username: 'ErwinWurm')
 erwin_art = Art.create!(
   title: 'Wurm Sculpture',
   description: 'Awesome sculpture',
@@ -96,10 +96,10 @@ erwin_art = Art.create!(
   user_id: erwin.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: erwin.username,
   is_for_auction: [true, false].sample
 )
-erwin_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/download-4_vsle8n.jpg'), filename: 'download-4_vsle8n.jpg')
+erwin_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638359006/production/wurms_rh7ozl.jpg'), filename: 'wurms_rh7ozl.jpg')
 
 
 erwin_art_two = Art.create!(
@@ -109,10 +109,10 @@ erwin_art_two = Art.create!(
   user_id: erwin.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: erwin.username,
   is_for_auction: [true, false].sample
 )
-erwin_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/images-2_enmv55.jpg'), filename: 'images-2_enmv55.jpg')
+erwin_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638359337/production/wurm_2_cvxtww.jpg'), filename: 'wurm_2_cvxtww.jpg')
 
 puts "Erwin Wurm Art two"
 
@@ -123,14 +123,14 @@ erwin_art_three = Art.create!(
   user_id: erwin.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: erwin.username,
   is_for_auction: [true, false].sample
 )
 erwin_art_three.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285693/production/download_c2z6es.jpg'), filename: 'download_c2z6es.jpg')
 
 puts "Erwin Wurm Instillation"
 
-tati = User.create!(email: "trautt@photography.com", password: '202020', username: 'Tatiana Trauttmansdorff-Weinsberg')
+tati = User.create!(email: "trautt@photography.com", password: '202020', username: 'TatianaTrautt')
 tati_art = Art.create!(
   title: 'Street Shot',
   description: 'NY Shot 11',
@@ -138,12 +138,12 @@ tati_art = Art.create!(
   user_id: tati.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: tati.username,
   is_for_auction: [true, false].sample
 )
 tati_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/download-1_oh4v37.jpg'), filename: 'download-1_oh4v37.jpg')
 
-clara = User.create!(email: "jebsen@photography.com", password: '303030', username: 'Clara Jebsen')
+clara = User.create!(email: "jebsen@photography.com", password: '303030', username: 'ClaraJebsen')
 clara_art = Art.create!(
   title: 'Filippa',
   description: 'Series shot in Milan',
@@ -151,12 +151,12 @@ clara_art = Art.create!(
   user_id: clara.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: clara.username,
   is_for_auction: [true, false].sample
 )
 clara_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/images-2_tbjdir.jpg'), filename: 'images-2_tbjdir.jpg')
 
-cyrielle = User.create!(email: "gylacsy@art.com", password: '404040', username: 'Cyrielle Gylacsy')
+cyrielle = User.create!(email: "gylacsy@art.com", password: '404040', username: 'CyrielleGylacsy')
 cyrielle_art = Art.create!(
   title: 'In a Bubble',
   description: 'Light based',
@@ -164,7 +164,7 @@ cyrielle_art = Art.create!(
   user_id: cyrielle.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: cyrielle.username,
   is_for_auction: [true, false].sample
 )
 cyrielle_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285081/production/images_xt70mv.jpg'), filename: 'images_xt70mv.jpg')
@@ -176,7 +176,7 @@ cyrielle_art_two = Art.create!(
   user_id: cyrielle.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: cyrielle.username,
   is_for_auction: [true, false].sample
 )
 cyrielle_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/download-2_ivajw2.jpg'), filename: 'download-2_ivajw2.jpg')
@@ -188,13 +188,13 @@ cyrielle_art_three = Art.create!(
   user_id: cyrielle.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: cyrielle.username,
   is_for_auction: [true, false].sample
 )
 cyrielle_art_three.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/download-1_ncledy.jpg'), filename: 'download-1_ncledy.jpg')
 
 
-cindy = User.create!(email: "sherman@art.com", password: '505050', username: 'Cindy Shermann')
+cindy = User.create!(email: "sherman@art.com", password: '505050', username: 'CindyShermann')
 cindy_art = Art.create!(
   title: 'Self Portrait',
   description: 'Light based',
@@ -202,10 +202,10 @@ cindy_art = Art.create!(
   user_id: cindy.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: cindy.username,
   is_for_auction: [true, false].sample
 )
-cindy_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/download-3_f4ypes.jpg'), filename: 'download-3_f4ypes.jpg')
+cindy_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638359537/production/2400_slptha.jpg'), filename: '2400_slptha.jpg')
 
 puts "Cindy Shermann Photo"
 
@@ -216,14 +216,14 @@ cindy_art_two = Art.create!(
   user_id: cindy.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: cindy.username,
   is_for_auction: [true, false].sample
 )
 cindy_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/download-2_vlwrzo.jpg'), filename: 'download-2_vlwrzo.jpg')
 
 puts "Cindy Photography 2"
 
-wangechi = User.create!(email: "mutu@art.com", password: '606060', username: 'Wangechi Mutu')
+wangechi = User.create!(email: "mutu@art.com", password: '606060', username: 'WangechiMutu')
 wangechi_art = Art.create!(
   title: 'Life Loss',
   description: 'mixed medium on paper',
@@ -231,7 +231,7 @@ wangechi_art = Art.create!(
   user_id: wangechi.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: wangechi.username,
   is_for_auction: [true, false].sample
 )
 wangechi_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/images-7_hyfa6k.jpg'), filename: 'images-7_hyfa6k.jpg')
@@ -245,14 +245,14 @@ wangechi_art_two = Art.create!(
   user_id: wangechi.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: wangechi.username,
   is_for_auction: [true, false].sample
 )
 wangechi_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/images_koi8zk.jpg'), filename: 'images_koi8zk.jpg')
 
 puts "Wangechi Mutu Collage two"
 
-gunther = User.create!(email: "sachs@art.com", password: '707070', username: 'Gunther Sachs')
+gunther = User.create!(email: "sachs@art.com", password: '707070', username: 'GuntherSachs')
 gunther_art = Art.create!(
   title: 'Remessing',
   description: 'mixed medium on paper',
@@ -260,14 +260,14 @@ gunther_art = Art.create!(
   user_id: gunther.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: gunther.username,
   is_for_auction: [true, false].sample
 )
 gunther_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/download_ufigsx.jpg'), filename: 'download_ufigsx.jpg')
 
 puts "Gunther Sachs Instillation"
 
-ines = User.create!(email: "longevial@art.com", password: '808080', username: 'Ines Longevial')
+ines = User.create!(email: "longevial@art.com", password: '808080', username: 'InesLongevial')
 ines_art = Art.create!(
   title: 'Perspectives',
   description: 'oil on canvas',
@@ -275,7 +275,7 @@ ines_art = Art.create!(
   user_id: ines.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: ines.username,
   is_for_auction: [true, false].sample
 )
 ines_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/images-5_kguu8o.jpg'), filename: 'images-5_kguu8o.jpg')
@@ -289,14 +289,14 @@ ines_art_two = Art.create!(
   user_id: ines.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: ines.username,
   is_for_auction: [true, false].sample
 )
-ines_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/images-3_ho69ax.jpg'), filename: 'images-3_ho69ax.jpg')
+ines_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/images-5_kguu8o.jpg'), filename: 'images-5_kguu8o.jpg')
 
 puts "Longevial Painting 2"
 
-bea = User.create!(email: "bonafini@art.com", password: '909090', username: 'Beatrice Bonafini')
+bea = User.create!(email: "bonafini@art.com", password: '909090', username: 'BeatriceBonafini')
 bea_art = Art.create!(
   title: 'Are you ok?',
   description: 'oil on canvas',
@@ -304,7 +304,7 @@ bea_art = Art.create!(
   user_id: bea.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: bea.username,
   is_for_auction: [true, false].sample
 )
 bea_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/images_dpoqgz.jpg'), filename: 'images_dpoqgz.jpg')
@@ -318,7 +318,7 @@ bea_art_two = Art.create!(
   user_id: bea.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: bea.username,
   is_for_auction: [true, false].sample
 )
 bea_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/download_xynuv9.jpg'), filename: 'download_xynuv9.jpg')
@@ -334,7 +334,7 @@ antiques_art = Art.create!(
   user_id: antiques.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: antiques.username,
   is_for_auction: [true, false].sample
 )
 antiques_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638287565/production/images_puyico.jpg'), filename: 'images_puyico.jpg')
@@ -348,7 +348,7 @@ antiques_art_two = Art.create!(
   user_id: antiques.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
-  creator: user.username,
+  creator: antiques.username,
   is_for_auction: [true, false].sample
 )
 antiques_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638287563/production/images-1_v1y6qi.jpg'), filename: 'images-1_v1y6qi.jpg')
