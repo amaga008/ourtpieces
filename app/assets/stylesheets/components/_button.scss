@@ -37,7 +37,7 @@
 .home-create {
   background-color: white;
   line-height: 1;
-  margin:3px;
+  margin:10px;
   padding: 17px;
   color: palevioletred;
   border: lightpink;
@@ -47,10 +47,13 @@
   font-variant: small-caps;
   font-style: italic;
   font-size: 20px;
+  vertical-align: center;
+  text-align: center;
+  width: 50px;
 }
 
 .home-create:hover {
-  margin: 5px;
+  margin: 10px;
   padding: 18.5px;
   box-shadow: 0 0 15px palevioletred;
   color: palevioletred;
@@ -60,7 +63,7 @@
 .home-explore {
   background-color: palevioletred;
   line-height: 1;
-  margin: 3px;
+  margin: 10px;
   padding: 17px;
   color: white;
   border: lightpink;
@@ -73,7 +76,7 @@
 }
 
 .home-explore:hover {
-  margin: 5px;
+  margin: 10px;
   padding: 18.5px;
   box-shadow: 0 0 15px palevioletred;
   color: white;
