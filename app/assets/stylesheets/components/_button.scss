@@ -122,3 +122,23 @@
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: bolder;
 }
+
+.sign-up {
+  background-color: palevioletred;
+  line-height: 1;
+  margin: 3px;
+  padding: 17px;
+  color: white;
+  border: lightpink;
+  border-radius: 10px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.sign-up:hover {
+  color: white;
+  box-shadow: 0 0 15px palevioletred;
+}
