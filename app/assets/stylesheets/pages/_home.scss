@@ -25,28 +25,30 @@
 }
 
 .value-prop-card h4 {
-color: rgb(186, 66, 106);
+color: black;
 font-size:26px;
 }
 
 .value-prop-card p {
-color: rgb(186, 66, 106);
+color: black;
 }
 
 .home-title {
   color: white;
   font-weight: normal;
-  font-size: 35px;
-  width: 690px;
-  font-family: "Futura", Arial, Helvetica, sans-serif;
-  font-variant: small-caps;
+  font-size: 60px;
+  width: 600px;
 }
 
+.home-title-bold {
+  padding: 0px 5px 0px 5px;
+}
 
 .home-subtitle {
   color:lightpink;
+  width: 500px;
   margin-bottom: 30px;
-  font-size: 35px;
+  font-size: 28px;
   font-weight: lighter;
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-variant: small-caps;
@@ -59,7 +61,6 @@ color: rgb(186, 66, 106);
   font-size: 40px;
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-variant: small-caps;
-  font-style: italic;
 }
 
 .category-title {
@@ -68,14 +69,12 @@ color: rgb(186, 66, 106);
   font-size: 40px;
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-variant: small-caps;
-  font-style: italic;
 }
 
 .featured-title {
-    color: rgb(212, 77, 122);
+  color: rgb(212, 77, 122);
   font-weight: normal;
   font-size: 40px;
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-variant: small-caps;
-  font-style: italic;
 }
