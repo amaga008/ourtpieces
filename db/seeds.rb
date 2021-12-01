@@ -63,7 +63,7 @@ emilia = User.create!(email: "emilia@test.com", password: '123123', username: 'E
 emilia_art = Art.create!(
   title: 'Emilia Auersperg Skulptur',
   description: 'Awesome sculpture',
-  category: 'sculptures',
+  category: 'Sculpture',
   user_id: emilia.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -77,7 +77,7 @@ puts "Auersperg Sculpture"
 emilia_art_two = Art.create!(
   title: 'Emilia Auersperg Painting',
   description: 'oil on canvas',
-  category: 'painting',
+  category: 'Painting',
   user_id: emilia.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -92,7 +92,7 @@ erwin = User.create!(email: "erwin@test.com", password: '555555', username: 'Erw
 erwin_art = Art.create!(
   title: 'Wurm Sculpture',
   description: 'Awesome sculpture',
-  category: 'sculptures',
+  category: 'Sculpture',
   user_id: erwin.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -105,7 +105,7 @@ erwin_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image
 erwin_art_two = Art.create!(
   title: 'Wurm Sculpture 2',
   description: 'Awesome sculpture',
-  category: 'sculptures',
+  category: 'Sculpture',
   user_id: erwin.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -119,7 +119,7 @@ puts "Erwin Wurm Art two"
 erwin_art_three = Art.create!(
   title: 'Through my eyes',
   description: 'Instillation beyond',
-  category: 'installation',
+  category: 'Installation',
   user_id: erwin.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -134,7 +134,7 @@ tati = User.create!(email: "trautt@photography.com", password: '202020', usernam
 tati_art = Art.create!(
   title: 'Street Shot',
   description: 'NY Shot 11',
-  category: 'photography',
+  category: 'Photography',
   user_id: tati.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -147,7 +147,7 @@ clara = User.create!(email: "jebsen@photography.com", password: '303030', userna
 clara_art = Art.create!(
   title: 'Filippa',
   description: 'Series shot in Milan',
-  category: 'photography',
+  category: 'Photography',
   user_id: clara.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -160,7 +160,7 @@ cyrielle = User.create!(email: "gylacsy@art.com", password: '404040', username: 
 cyrielle_art = Art.create!(
   title: 'In a Bubble',
   description: 'Light based',
-  category: 'photography',
+  category: 'Photography',
   user_id: cyrielle.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -172,7 +172,7 @@ cyrielle_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/im
 cyrielle_art_two = Art.create!(
   title: 'Dots',
   description: 'Re-creating the sky I saw on Monday 23rd Novmeber',
-  category: 'painting',
+  category: 'Painting',
   user_id: cyrielle.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -184,7 +184,7 @@ cyrielle_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpiece
 cyrielle_art_three = Art.create!(
   title: 'Space',
   description: 'Space Shot 1/2 pencil on paper',
-  category: 'drawing',
+  category: 'Drawing',
   user_id: cyrielle.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -198,7 +198,7 @@ cindy = User.create!(email: "sherman@art.com", password: '505050', username: 'Ci
 cindy_art = Art.create!(
   title: 'Self Portrait',
   description: 'Light based',
-  category: 'photography',
+  category: 'Photography',
   user_id: cindy.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -212,7 +212,7 @@ puts "Cindy Shermann Photo"
 cindy_art_two = Art.create!(
   title: 'Self Portrait 2/2000',
   description: 'Light based',
-  category: 'photography',
+  category: 'Photography',
   user_id: cindy.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -227,7 +227,7 @@ wangechi = User.create!(email: "mutu@art.com", password: '606060', username: 'Wa
 wangechi_art = Art.create!(
   title: 'Life Loss',
   description: 'mixed medium on paper',
-  category: 'collage',
+  category: 'Collage',
   user_id: wangechi.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -241,7 +241,7 @@ puts "Wangechi Mutu Collage 1"
 wangechi_art_two = Art.create!(
   title: 'Life Force',
   description: 'mixed medium on paper',
-  category: 'collage',
+  category: 'Collage',
   user_id: wangechi.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -256,7 +256,7 @@ gunther = User.create!(email: "sachs@art.com", password: '707070', username: 'Gu
 gunther_art = Art.create!(
   title: 'Remessing',
   description: 'mixed medium on paper',
-  category: 'installation',
+  category: 'Installation',
   user_id: gunther.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -271,7 +271,7 @@ ines = User.create!(email: "longevial@art.com", password: '808080', username: 'I
 ines_art = Art.create!(
   title: 'Perspectives',
   description: 'oil on canvas',
-  category: 'painting',
+  category: 'Painting',
   user_id: ines.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -285,7 +285,7 @@ puts "Longevial Painting"
 ines_art_two = Art.create!(
   title: 'Persona',
   description: 'oil on canvas',
-  category: 'painting',
+  category: 'Painting',
   user_id: ines.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -300,7 +300,7 @@ bea = User.create!(email: "bonafini@art.com", password: '909090', username: 'Bea
 bea_art = Art.create!(
   title: 'Are you ok?',
   description: 'oil on canvas',
-  category: 'installation',
+  category: 'Installation',
   user_id: bea.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -314,7 +314,7 @@ puts "Bonafini Instillation"
 bea_art_two = Art.create!(
   title: 'Toxic',
   description: 'pencil on paper',
-  category: 'drawing',
+  category: 'Drawing',
   user_id: bea.id,
   measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
   starting_price: [500, 600, 700, 1000].sample,
@@ -324,3 +324,33 @@ bea_art_two = Art.create!(
 bea_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638284527/production/download_xynuv9.jpg'), filename: 'download_xynuv9.jpg')
 
 puts "Bonafini Drawing"
+
+
+antiques = User.create!(email: "dealerantiques@gmail.com", password: '111111', username: 'Antuuiqi')
+antiques_art = Art.create!(
+  title: 'Sculpture 1920',
+  description: 'Body',
+  category: 'Antiques',
+  user_id: antiques.id,
+  measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
+  starting_price: [500, 600, 700, 1000].sample,
+  creator: user.username,
+  is_for_auction: [true, false].sample
+)
+antiques_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638287565/production/images_puyico.jpg'), filename: 'images_puyico.jpg')
+
+puts "Antique Sculpture"
+
+antiques_art_two = Art.create!(
+  title: 'Sculpture 1920',
+  description: 'Portrait A. Schrall 1820',
+  category: 'Antiques',
+  user_id: antiques.id,
+  measurements: ["100x400", "600x750", "1000x1450", "2000x4350"].sample,
+  starting_price: [500, 600, 700, 1000].sample,
+  creator: user.username,
+  is_for_auction: [true, false].sample
+)
+antiques_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638287563/production/images-1_v1y6qi.jpg'), filename: 'images-1_v1y6qi.jpg')
+
+puts "Antique Painnting"
