@@ -85,14 +85,25 @@
 .profile-create {
   background-color: palevioletred;
   line-height: 1;
-  margin: 5px;
-  padding: 14px;
-  color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 17px;
   color: white;
   border: lightpink;
   border-radius: 10px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-weight: bolder;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.profile-create:hover {
+  margin: 10px;
+  padding: 18.5px;
+  box-shadow: 0 0 15px palevioletred;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .purchase {
@@ -110,17 +121,6 @@
 
 .btn-drop:hover {
   box-shadow: 0 0 6px palevioletred;
-}
-.profile-create:hover {
-  background-color: black;
-  line-height: 1;
-  margin: 5px;
-  padding: 14px;
-  color: palevioletred;
-  border: palevioletred;
-  border-radius: 10px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-weight: bolder;
 }
 
 .sign-up {

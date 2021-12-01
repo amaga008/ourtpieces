@@ -22,23 +22,14 @@
 
 .btn-search {
   color: rgb(255, 255, 255);
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
 }
 
 .btn-search:hover {
   color: rgb(238, 157, 184);
 }
 
-.btn-drop {
-  background-color: palevioletred;
-  line-height: 1;
-  margin: 5px;
-  padding: 14px;
-  color: white;
-  border: lightpink;
-  border-radius: 10px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-weight: bolder;
-}
 
 .filters-container {
   display: flex;
@@ -54,10 +45,12 @@
   color: white;
   border: lightpink;
   border-radius: 10px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-weight: bolder;
+  font-weight: normal;
   width: 170px;
   position: relative;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-size: 18px
 }
 
 .filter-style-button:hover {
@@ -70,11 +63,17 @@
   margin: 5px;
   padding: 14px;
   border-radius: 10px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: bolder;
   width: 170px;
   color: palevioletred;
   border-color: palevioletred;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-size: 18px;
+}
+
+.filter-search-btn:hover {
+  box-shadow: 0 0 6px palevioletred
 }
 
 .filters-container select {
@@ -150,4 +149,16 @@
   font-size: 45px;
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-variant: small-caps;
+}
+
+.index-sub {
+  font-weight: lighter;
+  font-size: 35px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  color: palevioletred;
+}
+
+.search-text {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
 }
