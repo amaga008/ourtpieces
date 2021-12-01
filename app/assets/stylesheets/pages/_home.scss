@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 .value-prop-cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
@@ -10,14 +10,15 @@
   border-radius: 3px;
   text-align: center;
   padding: 20px;
-  border: 1px solid rgb(230,230,230);
-  box-shadow:0 0 3px palevioletred;
+  box-shadow:0 0 3px rgba(216, 112, 147, 0.55);
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-size: 15px;
+  background-color: rgba(216, 112, 147, 0.034);
 }
 
 .value-prop-card:hover {
   box-shadow:0 0 15px palevioletred;
+  cursor: pointer;
 }
 
 .value-prop-card img {
