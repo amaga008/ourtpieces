@@ -9,7 +9,7 @@ class BidsController < ApplicationController
     @bid.art = @art
     @bid.user = current_user
     @previous_bid = Bid.where(art_id: @art.id).last # if does not work remove id
-    if @bid.amount <= @previous_bid.amount
+    if @previous_bid && @bid.amount <=  @previous_bid.amount
       redirect_to art_path(@art), notice: 'Unfortunately your bid is too low'
     elsif @bid.save
       ArtChannel.broadcast_to(

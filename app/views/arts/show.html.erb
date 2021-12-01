@@ -68,10 +68,11 @@
   <div class="container table-show mb-5">
     <h2 class="featured-title text-center mb-2">Current Bids</h2>
     <p id="demo" class="text-center mb-5"></p>
-    <p class="auction-end text-center mb-5"><%=@art.auction_end_time  %></p>
+    <% if @art.auction_end_time %>
+      <p class="auction-end text-center mb-5"><%= @art.auction_end_time  %></p>
+    <% end %>
     <table class="mt-4">
     <tr>
-      <th>n°</th>
       <th>Username</th>
       <th>Date/Time</th>
       <th>Amount</th>
@@ -80,7 +81,7 @@
       <div class="bids"
         data-controller="art-subscription"
         data-art-subscription-art-id-value="<%= @art.id %>">
-      <% @art.bids.each do |bid| %>
+      <% @art.bids.reverse.each do |bid| %>
         <%= render "bids/bid", bid: bid %>
       <% end %>
     </tr>
