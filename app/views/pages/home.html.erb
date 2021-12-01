@@ -1,27 +1,26 @@
 <div class="banner">
   <div class="container">
-  <video autoplay loop muted class="banner__video" poster="https://mixkit.imgix.net/videos/preview/mixkit-abstract-psychedelic-texture-in-motion-red-and-white-tones-12309-0.jpg?q=80&auto=format%2Ccompress">
-    <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-psychedelic-texture-in-motion-red-and-white-tones-12309-large.mp4" type="video/webm">
-  </video>
-    <div class="d-flex">
+    <video autoplay loop muted class="banner__video" poster="https://mixkit.imgix.net/videos/preview/mixkit-abstract-psychedelic-texture-in-motion-red-and-white-tones-12309-0.jpg?q=80&auto=format%2Ccompress">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-psychedelic-texture-in-motion-red-and-white-tones-12309-large.mp4" type="video/webm">
+    </video>
+    <div class="d-flex justify-content-between">
       <div>
-        <h2 class = "home-title"><strong>From fine art to NFTs</strong><br> An investment avenue for artists & investors</h2>
-        <h4 class = "home-subtitle mb-5"> Be part of the NFT revolution, buy your OURTPIECE !</h4>
+        <h2 class = "home-title">From fine art to <strong class="home-title-bold" style="background-color:rgb(186, 66, 106);">NFTs</strong>: an investment avenue for artists & investors</h2>
+        <h4 class = "home-subtitle mb-5"> Be part of the NFT revolution, buy your OURTPIECE!</h4>
         <div class="inline-block">
           <%= link_to "explore", arts_path, class: "home-explore" %>
           <%= link_to "create", new_art_path, class: "home-create" %>
         </div>
       </div>
-        <div>
-          <div class="card-art">
-            <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg" />
-            <div class="card-art-infos">
-              <img src="https://avatars.githubusercontent.com/u/88554240?v=4" class="card-art-user avatar-bordered" />
-              <div>
-                <h2>Rainbow Look</h2>
-                <p><strong> Diane Finley </strong></p>
-                <p>alexandre.magalhaes</p>
-              </div>
+      <div>
+        <div class="card-art ml-4">
+          <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg" />
+          <div class="card-art-infos">
+            <img src="https://avatars.githubusercontent.com/u/88554240?v=4" class="card-art-user avatar-bordered" />
+            <div>
+              <h2>Rainbow Look</h2>
+              <p><strong> Diane Finley </strong></p>
+              <p>alexandre.magalhaes</p>
             </div>
           </div>
         </div>
@@ -33,32 +32,34 @@
 <br>
 <br>
 <br>
+
 <div class ="container">
-  <h4 class="value-prop-subtitle text-center mb-3"> A Simple Process </h4>
-    <div class="value-prop-cards">
-      <div class="value-prop-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2039/2039060.png">
-        <h4><strong>Sign Up</strong></h4>
-        <p><strong>Simple Process: </strong><br> 1. Complete account details <br> 2. Link your crypto wallet<br>3. Wait for verification !</p>
-      </div>
-      <div class="value-prop-card">
-        <img src="https://cdn-icons.flaticon.com/png/512/1911/premium/1911209.png?token=exp=1638291632~hmac=fe6dfb609f1665f543eb8920734a3d89">
-        <h4><strong>For Ourtists</strong></h4>
-        <p><strong>Increased Exposure ! </strong> <br> 1. Upload your ourtpiece <br> 2. List as an auction or regular sale <br> 3. Wait until it has been purchased</p>
-      </div>
-      <div class="value-prop-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/4334/4334582.png">
-        <h4><strong>For Ourt Collectors</strong></h4>
-        <p><strong>New Investment Avenue!</strong><br> 1. Explore all ourtists <br> 2. Bid on ourt or purchase now <br> 3. Relist at your convenience</p>
-      </div>
+  <h4 class="value-prop-subtitle text-center mb-5"> A Simple Process </h4>
+  <div class="value-prop-cards">
+    <div class="value-prop-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2039/2039060.png">
+      <h4 class="mt-4"><strong>Sign Up</strong></h4>
+      <p><strong>Simple Process: </strong><br> 1. Complete account details <br> 2. Link your crypto wallet<br>3. Wait for verification !</p>
     </div>
+    <div class="value-prop-card">
+      <img src="https://cdn-icons.flaticon.com/png/512/1911/premium/1911209.png?token=exp=1638291632~hmac=fe6dfb609f1665f543eb8920734a3d89">
+      <h4 class="mt-4"><strong>For Ourtists</strong></h4>
+      <p><strong>Increased Exposure ! </strong> <br> 1. Upload your ourtpiece <br> 2. List as an auction or regular sale <br> 3. Wait until it has been purchased</p>
+    </div>
+    <div class="value-prop-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4334/4334582.png">
+      <h4 class="mt-4"><strong>For Ourt Collectors</strong></h4>
+      <p><strong>New Investment Avenue!</strong><br> 1. Explore all ourtists <br> 2. Bid on ourt or purchase now <br> 3. Relist at your convenience</p>
+    </div>
+  </div>
 </div>
+
 <br>
 <br>
 <br>
 
-<div class="container mt-5">
-  <h2 class="featured-title text-center mb-3"> Featured OurtPieces </h2>
+<div class="container">
+  <h2 class="featured-title text-center mb-5"> Featured OurtPieces </h2>
     <div class="row justify-content-between">
           <div class="card-art featured">
             <img src="https://numero.twic.pics/images/article/homepage/full/push-cover-takashi-murakami-numero-magazine.jpg?twic=v1/cover=16:9/resize=900" />
@@ -99,12 +100,11 @@
 <br>
 <br>
 <br>
-<br>
 
 <div class="container">
   <h2 class=" category-title text-center mb-5">Browse By Category</h2>
-  <div class="d-flex justify-content-center">
-    <div class="col-3">
+  <div class="all-category-cards">
+    <div class="row justify-content-between">
       <%= link_to arts_path(utf8: "✓" , :query => "category", button: ""), style: "text-decoration: none;" do %>
         <div class="card-category mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://artlogic-res.cloudinary.com/w_2400,h_1800,c_limit,f_auto,fl_lossy,q_auto:good/ws-unitlondon3/usr/images/blog_entries/hero_image/113/andy-micket.jpg)">
           Contemporary
@@ -121,7 +121,7 @@
         </div>
       <% end %>
     </div>
-    <div class="col-3">
+    <div class="row justify-content-between">
       <%= link_to arts_path(utf8: "✓" , :query => "category", button: ""), style: "text-decoration: none;" do %>
         <div class="card-category mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.squarespace-cdn.com/content/v1/605a0a091c4fe4160e55b1a8/1618584555519-7CPEGGLADPQ5F8G11CSF/tempImagexaOhdo.png?format=1000w)">
           Painting
@@ -138,7 +138,7 @@
         </div>
       <% end %>
     </div>
-    <div class="col-3">
+    <div class="row justify-content-between">
       <%= link_to arts_path(utf8: "✓" , :query => "category", button: ""), style: "text-decoration: none;" do %>
           <div class="card-category mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.tate.org.uk/sites/default/files/styles/width-420/public/egon_schiele_standing_male_figure_self-portrait_1914_6.jpg)">
           Drawing

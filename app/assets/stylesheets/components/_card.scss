@@ -84,7 +84,7 @@
   background-size: cover;
   background-position: center;
   height: 200px;
-  width: 250px;
+  width: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,6 +97,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   transition: ease 0.3s;
 }
+
 
 .card-category:hover {
   background-size: cover;
@@ -112,6 +113,11 @@
   text-shadow: 1px 1px 3px rgba(133, 94, 94, 0.4);
   border-radius: 5px;
   box-shadow: 0 0 15px palevioletred;
+}
+
+.all-category-cards {
+  width: 100%;
+  overflow:initial;
 }
 
 .auction-card {
