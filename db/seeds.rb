@@ -292,7 +292,7 @@ ines_art_two = Art.create!(
   creator: user.username,
   is_for_auction: [true, false].sample
 )
-ines_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/images-3_ho69ax.jpg'), filename: 'images-3_ho69ax.jpg')
+ines_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285082/production/images-5_kguu8o.jpg'), filename: 'images-5_kguu8o.jpg')
 
 puts "Longevial Painting 2"
 
