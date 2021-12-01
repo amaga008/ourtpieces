@@ -1,7 +1,8 @@
 class TransactionsController < ApplicationController
   def show
     @art = Art.find(params[:art_id])
-    @transaction = Transaction.find(params[:id])
+    @transaction_amount = Transaction.find(params[:id])&.amount || @art.starting_price
+
   end
 
   def new
