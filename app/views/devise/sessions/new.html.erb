@@ -1,9 +1,6 @@
-<div class="david d-flex justify-content-center p-5" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://images.e-flux-systems.com/283237_588943ecc546db7cc5168e868a7848e7.jpg,1920); height: 80vh;">
-  <br>
-  <br>
-    <div class="center card-new-html">
+<div class="david d-flex justify-content-center" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://images.e-flux-systems.com/283237_588943ecc546db7cc5168e868a7848e7.jpg,1920); object-fit:cover">
+    <div class="card-new-html">
     <h2>Log in</h2>
-
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form-inputs">
         <%= f.input :email,
@@ -14,12 +11,11 @@
                     required: false,
                     input_html: { autocomplete: "current-password" } %>
        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-        <div class="form-actions">
-      <%= f.button :submit, "Log in" %>
-    </div>
-</div>
+       <div class="form-actions">
+       <%= f.button :submit, "Log in" , class:"p-0" %>
+       </div>
+      </div>
   <% end %>
-<br>
   <%= render "devise/shared/links" %>
    </div>
 </div>
