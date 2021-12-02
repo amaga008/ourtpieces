@@ -62,12 +62,12 @@
   width: 100%;
 }
 
-.show-page-texts {
+.showpage-texts {
   font-size: 20px;
   color: rgb(56, 56, 55);
-  margin: 0px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  margin-bottom: 15px;
   text-align: justify;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
 }
 
 .description-background {
@@ -112,6 +112,8 @@ table {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 10px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
 }
 
 .winning-bid{
@@ -120,4 +122,57 @@ table {
   padding: 15px 0px;
   margin-bottom: 12px;
   box-shadow: 0px 0px 33px 15px #00000014;
+}
+
+.showtitle {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-size: 48px;
+}
+
+.showsubtitle {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-size: 38px;
+  font-weight: lighter;
+  color: rgb(228, 173, 192);
+}
+
+.bid-title {
+  color: #d44d7a;
+  font-weight: normal;
+  font-size: 45px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+}
+
+.modal-action {
+  background-color: palevioletred;
+  margin-top: 10px;
+  line-height: 1;
+  padding: 17px;
+  color: white;
+  border: lightpink;
+  border-radius: 10px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.modal-action:hover {
+  margin-top: 10px;
+  padding: 18.5px;
+  box-shadow: 0 0 15px palevioletred;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.modal-title {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-size: 25px;
 }

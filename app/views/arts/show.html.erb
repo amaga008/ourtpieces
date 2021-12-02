@@ -1,7 +1,7 @@
 <div class="banner-show-1">
   <div class="container">
-      <h3 class="text-center text-white"><%= @art.title %></h3>
-      <p class="text-center text-white"><%= @art.creator %></p>
+      <h3 class="showtitle text-center text-white"><%= @art.title %></h3>
+      <p class="showsubtitle text-center"><%= @art.creator %></p>
   </div>
 </div>
 
@@ -9,11 +9,13 @@
   <div class="container">
     <div class="d-flex justify-content-between">
       <div>
-      <h2 class="featured-title mb-4">Ourt Specs</h2>
-      <p class="showpage-texts"><strong>Description: </strong><%= @art.description %></p>
-      <p class="showpage-texts"><strong>Category:</strong> <%= @art.category %></p>
-      <p class="showpage-texts"><strong>Measurements:</strong> <%= @art.measurements %></p>
-      <p class="showpage-texts"><strong>Price: €</strong> <%=  @art.starting_price %></p>
+      <h2 class="featured-title mb-4">Ourt Details</h2>
+      <p class="showpage-texts"><strong>DESCRIPTION: </strong><%= @art.description %></p>
+      <p class="showpage-texts"><strong>CATEGORY:</strong> <%= @art.category %></p>
+      <p class="showpage-texts"><strong>MEASUREMENTS:</strong> <%= @art.measurements %></p>
+      <p class="showpage-texts"><strong>PRICE: €</strong> <%=  @art.starting_price %></p>
+      <br>
+      <br>
       <% if @art.is_for_auction == true %>
         <button type="button" class="show-action" data-toggle="modal" data-target="#exampleModal">Place a bid</button>
         <!-- Modal -->
@@ -66,7 +68,7 @@
 
 <% if @art.is_for_auction == true %>
   <div class="container table-show mb-5">
-    <h2 class="featured-title text-center mb-2">Current Bids</h2>
+    <h2 class="bid-title text-center mb-2">Current Bids</h2>
     <p id="demo" class="text-center mb-5"></p>
     <% if @art.auction_end_time %>
       <p class="auction-end text-center mb-5"><%= @art.auction_end_time  %></p>
