@@ -59,11 +59,11 @@ art_filenames = [
   'images-1_v1y6qi.jpg',
 ]
 
-emilia = User.create!(email: "emilia@test.com", password: '123123', username: 'EmiliaAuer')
+emilia = User.create!(email: "emilia@test.com", password: '123123', username: 'Emilia von Auersperg')
 emilia.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638369364/production/Emilia.profile_obbpo1.jpg'), filename: 'Emilia.profile_obbpo1.jpg')
 
 emilia_art = Art.create!(
-  title: 'Emilia Auersperg Skulptur',
+  title: 'Never Changing',
   description: 'Awesome sculpture',
   category: 'Sculpture',
   user_id: emilia.id,
@@ -77,7 +77,7 @@ emilia_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/imag
 puts "Auersperg Sculpture"
 
 emilia_art_two = Art.create!(
-  title: 'Emilia Auersperg Painting',
+  title: 'Night',
   description: 'oil on canvas',
   category: 'Painting',
   user_id: emilia.id,
@@ -90,7 +90,7 @@ emilia_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/
 
 puts "Auersperg Painting"
 
-erwin = User.create!(email: "erwin@test.com", password: '555555', username: 'ErwinWurm')
+erwin = User.create!(email: "erwin@test.com", password: '555555', username: 'Erwin Wurm')
 erwin.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638363052/production/wurm_erwin_ihwwu9.jpg'), filename: 'wurm_erwin_ihwwu9.jpg')
 
 erwin_art = Art.create!(
@@ -134,7 +134,7 @@ erwin_art_three.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces
 
 puts "Erwin Wurm Instillation"
 
-tati = User.create!(email: "trautt@photography.com", password: '202020', username: 'TatianaTrautt')
+tati = User.create!(email: "trautt@photography.com", password: '202020', username: 'Tatiana Trauttmansdorff')
 tati.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638369529/production/tatimimiprofile_f0ai5a.jpg'), filename: 'tatimimiprofile_f0ai5a.jpg')
 
 tati_art = Art.create!(
@@ -149,7 +149,7 @@ tati_art = Art.create!(
 )
 tati_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638285625/production/download-1_oh4v37.jpg'), filename: 'download-1_oh4v37.jpg')
 
-clara = User.create!(email: "jebsen@photography.com", password: '303030', username: 'ClaraJebsen')
+clara = User.create!(email: "jebsen@photography.com", password: '303030', username: 'Clara Jebsen')
 clara.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638363273/production/clara_jebsen_oses0s.jpg'), filename: 'clara_jebsen_oses0s.jpg')
 
 clara_art = Art.create!(
@@ -164,7 +164,7 @@ clara_art = Art.create!(
 )
 clara_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638363529/production/Filippi_ix7bfj.jpg'), filename: 'Filippi_ix7bfj.jpg')
 
-cyrielle = User.create!(email: "gylacsy@art.com", password: '404040', username: 'CyrielleGylacsy')
+cyrielle = User.create!(email: "gylacsy@art.com", password: '404040', username: 'Cyrielle Gylacsy')
 cyrielle.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638369089/production/CyrielleProfile_zfaaln.jpg'), filename: 'CyrielleProfile_zfaaln.jpg')
 
 cyrielle_art = Art.create!(
@@ -204,7 +204,7 @@ cyrielle_art_three = Art.create!(
 cyrielle_art_three.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638374911/production/CyrielleArt_ucgyqj.jpg'), filename: 'CyrielleArt_ucgyqj.jpg')
 
 
-cindy = User.create!(email: "sherman@art.com", password: '505050', username: 'CindyShermann')
+cindy = User.create!(email: "sherman@art.com", password: '505050', username: 'Cindy Shermann')
 cindy.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638360946/production/shermanpp_c2o2im.jpg'), filename: 'shermanpp_c2o2im.jpg')
 
 cindy_art = Art.create!(
@@ -235,7 +235,7 @@ cindy_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/i
 
 puts "Cindy Photography 2"
 
-wangechi = User.create!(email: "mutu@art.com", password: '606060', username: 'WangechiMutu')
+wangechi = User.create!(email: "mutu@art.com", password: '606060', username: 'Wangechi Mutu')
 wangechi.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638368398/production/Wangechi_Mutu_Profile_xuzrwc.jpg'), filename: 'Wangechi_Mutu_Profile_xuzrwc.jpg')
 
 
@@ -263,11 +263,11 @@ wangechi_art_two = Art.create!(
   creator: wangechi.username,
   is_for_auction: [true, false].sample
 )
-wangechi_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638373879/production/MutuMixedMedia_iasfjx.jpg'), filename: 'MutuMixedMedia_iasfjx.jpg')
+wangechi_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638373930/production/CollageMutu_m0xz5z.jpg'), filename: 'CollageMutu_m0xz5z.jpg')
 
 puts "Wangechi Mutu Collage two"
 
-rolf = User.create!(email: "sachs@art.com", password: '707070', username: 'RolfSachs')
+rolf = User.create!(email: "sachs@art.com", password: '707070', username: 'Rolf Sachs')
 rolf.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638362777/production/Rolf-Sachs_Ernesto-Kellenberger_2-635x423_oppqx0.jpg'), filename: 'Rolf-Sachs_Ernesto-Kellenberger_2-635x423_oppqx0.jp')
 
 rolf_art = Art.create!(
@@ -280,11 +280,11 @@ rolf_art = Art.create!(
   creator: rolf.username,
   is_for_auction: [true, false].sample
 )
-rolf_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638373930/production/CollageMutu_m0xz5z.jpg'), filename: 'CollageMutu_m0xz5z.jpg')
+rolf_art.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638360304/production/installationhello_ofclq8.jpg'), filename: 'installationhello_ofclq8.jpg')
 
 puts "Gunther Sachs Instillation"
 
-ines = User.create!(email: "longevial@art.com", password: '808080', username: 'InesLongevial')
+ines = User.create!(email: "longevial@art.com", password: '808080', username: 'Ines Longevial')
 ines.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638368561/production/ines-longevial.portrait_smxcp9.webp'), filename: 'ines-longevial.portrait_smxcp9.webp')
 
 ines_art = Art.create!(
@@ -315,7 +315,7 @@ ines_art_two.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/im
 
 puts "Longevial Painting 2"
 
-bea = User.create!(email: "bonafini@art.com", password: '909090', username: 'BeatriceBonafini')
+bea = User.create!(email: "bonafini@art.com", password: '909090', username: 'Beatrice Bonafini')
 bea.photo.attach(io: URI.open('https://res.cloudinary.com/ourtpieces/image/upload/v1638368884/production/Portrait_Bea_wyitzf.jpg'), filename: 'Portrait_Bea_wyitzf.jpg')
 
 bea_art = Art.create!(
