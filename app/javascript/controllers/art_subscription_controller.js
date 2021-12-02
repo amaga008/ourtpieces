@@ -8,7 +8,11 @@ export default class extends Controller {
   connect() {
     this.channel = consumer.subscriptions.create(
       { channel: "ArtChannel", id: this.artIdValue },
-      { received: data => auctionTable.insertAdjacentHTML("afterbegin", data) }
+      { received: data => {
+        if (auctionTable) {
+          auctionTable.insertAdjacentHTML("afterbegin", data)
+        }
+      } }
     )
   console.log(`Subscribed to the art with the id ${this.artIdValue}.`);
   }
