@@ -10,3 +10,19 @@
 .profile-section {
   height: fit-content;
 }
+
+.tabs-style {
+  font-size: 30px;
+}
+
+.active {
+  color: pink !important;
+}
+
+.nav-link {
+  color: grey;
+  &:hover{
+    text-decoration: none;
+    color: grey;
+  }
+}
