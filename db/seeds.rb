@@ -7,8 +7,8 @@ User.destroy_all
 puts "Creating arts and users..."
 
 
-  user = User.create!(email: "user@gmail.com", password: "123123", username: "Test")
-  user.photo.attach(io: File.open('app/assets/images/apicturews/Avatar1.jpg'), filename: 'Avatar1.jpg')
+  user = User.create!(email: "user@gmail.com", password: "123123", username: "Max Michielsen")
+  user.photo.attach(io: File.open('app/assets/images/apicturews/me.jpeg'), filename: 'me.jpeg')
 
 
 art_photos = [
