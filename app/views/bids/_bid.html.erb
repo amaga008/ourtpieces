@@ -1,5 +1,5 @@
-<tr>
-  <td><%= bid.user.username %></td>
-  <td><i><%= bid.created_at.strftime("%a %b %e at %l:%M %p") %></i></td>
-  <td><p>€<%= bid.amount %></p></td>
-</tr>
+<div class="bid-single">
+  <p class="bid-username"><%= bid.user.username %></p>
+  <p class="bid-time"><%= bid.created_at.strftime("%a %b %e at %l:%M %p") %></p>
+  <p class="bid-amount">€<%= bid.amount %></p>
+</div>

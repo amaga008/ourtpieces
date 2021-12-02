@@ -30,12 +30,14 @@ import "bootstrap";
 import { countdown } from '../components/countdown';
 
 import {modals} from "../modals/modals"
+import {winningBid } from "../components/bid"
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   modals()
   countdown()
+  winningBid()
   // isAuction()
 });
 
