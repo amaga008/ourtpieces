@@ -65,7 +65,7 @@
   <div class="container mt-5">
     <div class="row justify-content-left">
       <% @arts.each do |art| %>
-        <%= link_to art do %>
+        <%= link_to art, data: { turbolinks: false } do %>
         <div class="card-art mr-4">
           <% if art.photo.attached? %>
             <%= cl_image_tag art.photo.key, height: 300, width: 400, crop: :fill %>
