@@ -71,20 +71,20 @@
     <% if @art.auction_end_time %>
       <p class="auction-end text-center mb-5"><%= @art.auction_end_time  %></p>
     <% end %>
-    <table class="mt-4">
-    <tr>
-      <th>Username</th>
-      <th>Date/Time</th>
-      <th>Amount</th>
-    </tr>
-    <tr>
-      <div class="bids"
-        data-controller="art-subscription"
-        data-art-subscription-art-id-value="<%= @art.id %>">
-      <% @art.bids.each do |bid| %>
-        <%= render "bids/bid", bid: bid %>
-      <% end %>
-    </tr>
-    </table>
+    <div class="bid-container">
+      <div class="bid-headers">
+        <h3>Username</h3>
+        <h3>Date/Time</h3>
+        <h3>Amount</h3>
+      </div>
+
+      <div class="bid-amounts">
+        <div class="bids" data-controller="art-subscription" data-art-subscription-art-id-value="<%= @art.id %>">
+          <% @art.bids.reverse.each do |bid| %>
+            <%= render "bids/bid", bid: bid %>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </div>
 <% end %>
