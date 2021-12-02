@@ -8,12 +8,14 @@
             <%= f.input :title, label_html: { class:"text-input-white"} %>
             <%= f.input :creator, label_html: { class:"text-input-white"} %>
             <%= f.input :description, label_html: { class:"text-input-white"} %>
-            <%= f.input :category, label_html: { class:"text-input-white"}%>
+            <%= f.label "Category ", class:"text-input-white" %>
+            <%= f.select :category,["Contemporary", "Installation", "Sculpture", "Painting", "Photography", "Collage", "Drawing", "Mixed Medium", "Antiques"],
+                         prompt: "Select a Category", :class => "category-drop"%>
             <%= f.input :measurements, label_html: { class:"text-input-white"} %>
             <%= f.input :photo, label_html: { class:"text-input-white"}, as: :file %>
             <%= f.input :starting_price, label: "Listing Price",label_html: { class:"text-input-white"} %>
             <%= f.input :is_for_auction, label: "Auction or Sale", label_html: { class:"text-input-white"}, as: :radio_buttons, collection: [['Auction', "1"], ['Sale', "0"]] %>
-            <%= f.input :auction_end_time, label_html: { class:"text-input-white"} %>
+            <%= f.input :auction_end_time, as: :datetime, html5: true, label_html: { class:"text-input-white"} %>
             <%= f.submit class: 'profile-create' %>
           <% end %>
         </div>

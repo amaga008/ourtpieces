@@ -39,6 +39,7 @@ document.addEventListener('turbolinks:load', () => {
   countdown()
   winningBid()
   // isAuction()
+
 });
 
 import "controllers"
