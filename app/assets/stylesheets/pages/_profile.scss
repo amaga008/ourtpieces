@@ -37,6 +37,41 @@
 .profilebio {
   font-family: "Futura", Arial, Helvetica, sans-serif;
   font-variant: small-caps;
-  color: rgb(216, 140, 165);
-  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.profileurl {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.profile-delete {
+  background-color: rgba(225, 23, 23, 0.797);
+  line-height: 1;
+  margin: 10px;
+  padding: 12px 14px 16px 14px;
+  color: white;
+  border: lightpink;
+  border-radius: 10px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.profile-delete:hover {
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(225, 23, 23, 0.797);
+  color: white;
+  text-decoration: none;
+}
+
+.profiletab {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  color: palevioletred;
 }

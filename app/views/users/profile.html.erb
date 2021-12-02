@@ -1,24 +1,26 @@
-<div class="banner-profile" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=945&q=80);">
+<div class="banner-profile" style="background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://images.unsplash.com/photo-1599723332446-bdb4726eded6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);">
   <div class="">
     <div class="text-center">
       <img src="https://avatars.githubusercontent.com/u/18228670?v=4" alt="" class="avatar-profile mb-2">
       <h3 class="profilename mt-3"><%= @user.username %></h3>
-      <p class="profilebio mt-3">I am an art collector, fascinated by upcoming artists. I love helping them grow their exposure and brand!<%= @user.bio %></p>
-      <p class="profileurl mt-3">www.maxmichielsen.co.uk<%= @user.personal_url %></p>
+      <h3 class="profilebio mt-3">I am an art collector, fascinated by upcoming artists. I love helping them grow their exposure and brand!<%= @user.bio %></h3>
+      <h3 class="profileurl mt-3">www.maxmichielsen.co.uk<%= @user.personal_url %></h3>
     </div>
   </div>
 </div>
 
 <div class="container d-flex justify-content-end">
-  <%= link_to 'Create art', new_art_path, class:'btn profile-create mt-5 mb-4'%>
+  <button class ="btn profile-delete mt-5 mb-4">Delete Ourt</button>
+  <%= link_to 'Create Ourt', new_art_path, class:'btn profile-create mt-5 mb-4'%>
+
 </div>
 
 <div class="container mb-5">
 
   <nav class="mb-5">
     <div class="nav nav-tabs tabs-style" id="nav-tab" role="tablist">
-      <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">My Arts</a>
-      <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">My Bids</a>
+      <a class="profiletab nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">My OurtPieces</a>
+      <a class="profiletab nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Bids</a>
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
@@ -39,7 +41,7 @@
                   <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg" />
                 <% end %>
                   <div class="card-art-infos">
-                    <img src="https://avatars.githubusercontent.com/u/88554240?v=4" class="card-art-user avatar-bordered" />
+                    <img src="https://avatars.githubusercontent.com/u/18228670?v=4" class="card-art-user avatar-bordered" />
                     <div>
                       <h2 class="card-title"><%= art.title %></h2>
                       <p class="card-text"> <%= art.user.username %> </p>
@@ -48,7 +50,7 @@
                 </div>
                 <% end %>
             <% else %>
-              <p>No arts yet.</p>
+              <p>No OurtPieces yet.</p>
             <% end %>
           </div>
       </div>
