@@ -11,7 +11,7 @@ class Art < ApplicationRecord
   validates :measurements, presence: true
 
   def self.category
-    ["Contemporary", "Installation", "Sculpture", "Painting", "Photography", "Collage", "Drawing", "Mixed Medium", "Antiques"]
+    ["Antiques", "Collage", "Contemporary", "Drawing", "Installation", "Mixed Medium", "Painting", "Photography", "Sculpture"]
   end
 
   def self.status

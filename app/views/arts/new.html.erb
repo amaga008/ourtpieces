@@ -9,7 +9,7 @@
             <%= f.input :creator, label_html: { class:"text-input-white"} %>
             <%= f.input :description, label_html: { class:"text-input-white"} %>
             <%= f.label "Category ", class:"text-input-white" %>
-            <%= f.select :category,["Contemporary", "Installation", "Sculpture", "Painting", "Photography", "Collage", "Drawing", "Mixed Medium", "Antiques"],
+            <%= f.select :category,["Antiques", "Collage", "Contemporary", "Drawing", "Installation", "Mixed Medium", "Painting", "Photography", "Sculpture"],
                          prompt: "Select a Category", :class => "category-drop"%>
             <%= f.input :measurements, label_html: { class:"text-input-white"} %>
             <%= f.input :photo, label_html: { class:"text-input-white"}, as: :file %>
