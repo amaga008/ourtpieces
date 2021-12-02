@@ -16,7 +16,7 @@
             <%= f.input :starting_price, label: "Listing Price",label_html: { class:"text-input-white"} %>
             <%= f.input :is_for_auction, label: "Auction or Sale", label_html: { class:"text-input-white"}, as: :radio_buttons, collection: [['Auction', "1"], ['Sale', "0"]] %>
             <%= f.input :auction_end_time, as: :datetime, html5: true, label_html: { class:"text-input-white"} %>
-            <%= f.submit class: 'profile-create' %>
+            <%= f.submit class: 'profile-create', data: { turbolinks: false } %>
           <% end %>
         </div>
     </div>
