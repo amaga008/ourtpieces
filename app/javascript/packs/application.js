@@ -31,6 +31,7 @@ import { countdown } from '../components/countdown';
 
 import {modals} from "../modals/modals"
 import {winningBid } from "../components/bid"
+import {previewImageOnFileSelect} from "../components/photo_preview"
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
