@@ -30,6 +30,7 @@
   background: white;
   box-shadow: 0 0 25px palevioletred;
   margin-bottom: 50px;
+  text-decoration: none;
 }
 
 .card-art > img {
@@ -66,6 +67,15 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+}
+
+.card-art-infos:hover {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  text-decoration: none;
 }
 
 .card-art-infos .card-art-user {
